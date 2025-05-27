@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { marked } from 'marked';
-import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [activeDay, setActiveDay] = useState<number>(1);
@@ -112,7 +111,6 @@ function App() {
         <p>基於《Adorning Fashion: The History of Costume Jewellery to Modern Times》(Deanna Farneti Cera著)</p>
         <p>&copy; {new Date().getFullYear()} 服飾珠寶課程</p>
       </footer>
-    <Analytics />
     </div>
   );
 }
