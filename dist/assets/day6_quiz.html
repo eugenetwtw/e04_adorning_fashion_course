@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第六天測驗：1960-1970年代的實驗與反叛</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .question h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .option {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        label:hover {
+            background-color: #f0f0f0;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        .score-display {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>第六天測驗：1960-1970年代的實驗與反叛</h1>
+        
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <h3>1. 1960-1970年代珠寶設計的主要特點是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="A"> A. 回歸傳統與古典風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="B"> B. 實驗性、反傳統與多元材料
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="C"> C. 極簡主義與單色調
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="D"> D. 華麗與奢華風格
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q2">
+                <h3>2. 1960年代，哪一種社會運動對珠寶設計產生了重大影響？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="A"> A. 嬉皮文化（Hippie Movement）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="B"> B. 工業革命
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="C"> C. 文藝復興
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="D"> D. 巴洛克運動
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q3">
+                <h3>3. 1960-1970年代，哪一位設計師以其前衛的珠寶設計而聞名？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="A"> A. 艾爾莎·佩雷蒂（Elsa Peretti）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="B"> B. 帕科·拉班（Paco Rabanne）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="C"> C. 安德魯·格林納（Andrew Grima）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="D"> D. 以上皆是
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q4">
+                <h3>4. 1960-1970年代，哪一種非傳統材料開始在珠寶設計中廣泛使用？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="A"> A. 塑料、壓克力與PVC
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="B"> B. 鑽石與紅寶石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="C"> C. 黃金與白金
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="D"> D. 琺瑯與玻璃
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q5">
+                <h3>5. 1960年代末期，哪一種珠寶風格反映了太空探索的影響？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="A"> A. 太空時代風格（Space Age Style）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="B"> B. 古典復興風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="C"> C. 巴洛克風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="D"> D. 洛可可風格
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q6">
+                <h3>6. 1970年代，哪一種文化對珠寶設計產生了重要影響？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="A"> A. 迪斯科文化
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="B"> B. 朋克文化
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="C"> C. 東方與民族風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="D"> D. 以上皆是
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q7">
+                <h3>7. 1960-1970年代，哪一位設計師為蒂芙尼（Tiffany & Co.）設計了標誌性的「骨形」（Bone Cuff）手鐲？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="A"> A. 艾爾莎·佩雷蒂（Elsa Peretti）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="B"> B. 帕洛瑪·畢卡索（Paloma Picasso）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="C"> C. 讓·施盧姆伯傑（Jean Schlumberger）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="D"> D. 安吉拉·卡明斯（Angela Cummings）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q8">
+                <h3>8. 1960-1970年代，哪一種珠寶形式反映了對社會與政治議題的關注？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="A"> A. 和平符號與反戰標誌
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="B"> B. 皇室徽章
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="C"> C. 宗教象徵
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="D"> D. 家族紋章
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q9">
+                <h3>9. 1970年代，哪一種珠寶風格強調自然、有機形態與手工製作？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="A"> A. 工藝復興風格（Craft Revival）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="B"> B. 工業風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="C"> C. 極簡主義風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="D"> D. 高科技風格
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q10">
+                <h3>10. 1960-1970年代，哪一種珠寶設計趨勢挑戰了傳統珠寶的價值觀？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="A"> A. 使用非貴重材料與強調設計而非材料價值
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="B"> B. 回歸傳統貴重材料
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="C"> C. 強調珠寶的投資價值
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="D"> D. 完全放棄裝飾性
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submit-btn">提交答案</button>
+        </form>
+        
+        <div class="score-display" id="score-display"></div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // 正確答案
+            const correctAnswers = {
+                q1: "B",
+                q2: "A",
+                q3: "D",
+                q4: "A",
+                q5: "A",
+                q6: "D",
+                q7: "A",
+                q8: "A",
+                q9: "A",
+                q10: "A"
+            };
+            
+            let score = 100;
+            let answered = 0;
+            let correct = 0;
+            
+            // 檢查每個問題
+            for (let i = 1; i <= 10; i++) {
+                const questionId = 'q' + i;
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                
+                if (selectedOption) {
+                    answered++;
+                    if (selectedOption.value !== correctAnswers[questionId]) {
+                        score -= 10; // 每答錯一題扣10分
+                    } else {
+                        correct++;
+                    }
+                }
+            }
+            
+            // 顯示分數
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.innerHTML = `<strong>測驗結果</strong><br>
+                                     答對題數: ${correct} / 10<br>
+                                     總分: ${score} 分`;
+            scoreDisplay.style.display = 'block';
+            
+            // 滾動到結果區域
+            scoreDisplay.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

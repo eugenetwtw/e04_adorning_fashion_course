@@ -1,0 +1,298 @@
+/* 全局樣式 */
+:root {
+  --primary: #8a6d3b;
+  --secondary: #d4af37;
+  --background: #f9f6f0;
+  --text: #333;
+  --accent: #a52a2a;
+  --light-accent: #f5e9d9;
+  --border: #ddd;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 頁首樣式 */
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* 主要內容區域 */
+.main-container {
+  display: flex;
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* 側邊欄樣式 */
+.sidebar {
+  width: 200px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  margin-right: 1.5rem;
+  height: fit-content;
+}
+
+.sidebar h2 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--light-accent);
+}
+
+.day-list {
+  list-style: none;
+}
+
+.day-list li {
+  margin-bottom: 0.5rem;
+}
+
+.day-list button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.day-list button:hover {
+  background-color: var(--light-accent);
+}
+
+.day-list li.active button {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* 主內容區域 */
+main {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header {
+  padding: 1.5rem;
+  background-color: var(--light-accent);
+  border-bottom: 1px solid var(--border);
+}
+
+.content-header h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  background-color: var(--light-accent);
+}
+
+.tabs button.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.content-container {
+  padding: 1.5rem;
+  flex: 1;
+  overflow: auto;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.content {
+  line-height: 1.8;
+}
+
+.content h1, .content h2, .content h3 {
+  color: var(--primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content h1 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--light-accent);
+  padding-bottom: 0.5rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ul, .content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.content iframe {
+  border: none;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* 頁尾樣式 */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs button {
+    flex: 1;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .tabs button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

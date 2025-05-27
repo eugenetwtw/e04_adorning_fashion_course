@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四天課程：新藝術運動與裝飾藝術時期（1890-1940年）</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slide {
+            display: none;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            min-height: 500px;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            font-size: 1.2em;
+            color: var(--primary);
+            align-self: center;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="slide active" id="slide1">
+        <h1>新藝術運動與裝飾藝術時期</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=新藝術與裝飾藝術珠寶" alt="新藝術與裝飾藝術珠寶">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程</p>
+        </div>
+        <h2>第四天課程（1890-1940年）</h2>
+        <p>講師：[講師姓名]</p>
+        <p>日期：[日期]</p>
+    </div>
+
+    <!-- 課程概述 -->
+    <div class="slide" id="slide2">
+        <h1>課程概述</h1>
+        <h2>今日學習目標</h2>
+        <ul>
+            <li>理解新藝術運動的美學理念與社會背景</li>
+            <li>分析新藝術珠寶的設計特點與代表人物</li>
+            <li>探討第一次世界大戰對珠寶設計的影響</li>
+            <li>辨識裝飾藝術時期的珠寶風格與創新</li>
+            <li>掌握這一時期珠寶材料與工藝的革新</li>
+        </ul>
+        <h2>課程安排</h2>
+        <ol>
+            <li>上午：新藝術運動珠寶（1890-1915年）</li>
+            <li>下午：裝飾藝術時期珠寶（1920-1940年）</li>
+        </ol>
+    </div>
+
+    <!-- 新藝術運動背景 -->
+    <div class="slide" id="slide3">
+        <h1>新藝術運動背景</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>時代背景與起源</h3>
+                <ul>
+                    <li>19世紀末的工業化與機械化反思</li>
+                    <li>對維多利亞時期過度裝飾的反動</li>
+                    <li>日本浮世繪藝術的影響</li>
+                    <li>自然主義與象徵主義思潮</li>
+                    <li>從平面設計到建築的全面藝術運動</li>
+                </ul>
+                <h3>區域發展</h3>
+                <ul>
+                    <li>法國：Art Nouveau（新藝術）</li>
+                    <li>德國：Jugendstil（青年風格）</li>
+                    <li>奧地利：Secession（分離派）</li>
+                    <li>英國：Liberty Style（自由風格）</li>
+                    <li>西班牙：Modernismo（現代主義）</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=新藝術運動背景" alt="新藝術運動背景">
+                    <p class="caption">新藝術運動的視覺元素與影響</p>
+                </div>
+                <h3>核心美學理念</h3>
+                <ul>
+                    <li>有機曲線與流動形態</li>
+                    <li>自然元素的風格化處理</li>
+                    <li>功能與美學的統一</li>
+                    <li>手工藝與工業生產的結合</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新藝術珠寶特點 -->
+    <div class="slide" id="slide4">
+        <h1>新藝術珠寶特點</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>設計風格</h3>
+                <ul>
+                    <li>流動的曲線與不對稱構圖</li>
+                    <li>自然元素的高度風格化</li>
+                    <li>女性形象的象徵性表現</li>
+                    <li>色彩的情感與象徵意義</li>
+                    <li>整體設計感強於寶石價值</li>
+                </ul>
+                <h3>常見主題</h3>
+                <ul>
+                    <li>花卉：鳶尾花、蘭花、罌粟</li>
+                    <li>昆蟲：蜻蜓、蝴蝶、甲蟲</li>
+                    <li>動物：蛇、孔雀、天鵝</li>
+                    <li>女性形象：長髮飄逸的女性</li>
+                    <li>神話元素：精靈、水妖</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=新藝術珠寶特點" alt="新藝術珠寶特點">
+                    <p class="caption">新藝術風格的流動曲線與自然主題</p>
+                </div>
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>琺瑯工藝的創新應用</li>
+                    <li>半寶石的重新重視</li>
+                    <li>角、象牙等有機材料</li>
+                    <li>玻璃與新型合成材料</li>
+                    <li>鑲嵌技術的創新</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新藝術珠寶大師：勒內·拉利克 -->
+    <div class="slide" id="slide5">
+        <h1>新藝術珠寶大師：勒內·拉利克</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>生平與背景</h3>
+                <ul>
+                    <li>1860-1945年，法國設計師</li>
+                    <li>最初為卡地亞等珠寶商設計</li>
+                    <li>1885年開設自己的工作室</li>
+                    <li>1900年巴黎世博會獲得成功</li>
+                    <li>後來轉向玻璃藝術與香水瓶設計</li>
+                </ul>
+                <h3>設計風格</h3>
+                <ul>
+                    <li>自然主題的詩意表達</li>
+                    <li>材料價值次於藝術表現</li>
+                    <li>琺瑯與玻璃的創新應用</li>
+                    <li>女性形象的象徵性處理</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=拉利克作品" alt="拉利克作品">
+                    <p class="caption">拉利克的代表性珠寶作品</p>
+                </div>
+                <h3>代表作品</h3>
+                <ul>
+                    <li>「蜻蜓女郎」胸針</li>
+                    <li>「冬之少女」吊墜</li>
+                    <li>「罌粟花」髮飾</li>
+                    <li>「蘭花」胸針系列</li>
+                </ul>
+                <h3>影響與貢獻</h3>
+                <ul>
+                    <li>將珠寶提升至純藝術地位</li>
+                    <li>開創珠寶設計師品牌概念</li>
+                    <li>拓展珠寶材料的可能性</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 其他新藝術珠寶設計師 -->
+    <div class="slide" id="slide6">
+        <h1>其他新藝術珠寶設計師</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>法國</h3>
+                <ul>
+                    <li><strong>喬治·傅凱（Georges Fouquet）</strong>：與畫家穆夏合作</li>
+                    <li><strong>亨利·維弗（Henri Vever）</strong>：日本藝術影響明顯</li>
+                    <li><strong>路易斯·奧科克（Lucien Gaillard）</strong>：昆蟲主題專家</li>
+                </ul>
+                <h3>比利時與德國</h3>
+                <ul>
+                    <li><strong>菲利普·沃爾弗斯（Philippe Wolfers）</strong>：象牙與金屬結合</li>
+                    <li><strong>路易吉·曼奇尼（Luigi Mancinelli）</strong>：德國青年風格代表</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>英國</h3>
+                <ul>
+                    <li><strong>亞瑟·蓋斯比（Arthur Gaskin）</strong>：藝術與工藝運動</li>
+                    <li><strong>查爾斯·阿什比（C.R. Ashbee）</strong>：金匠行會創始人</li>
+                </ul>
+                <h3>美國</h3>
+                <ul>
+                    <li><strong>路易斯·康福特·提芬尼（Louis Comfort Tiffany）</strong>：彩色玻璃與琺瑯</li>
+                    <li><strong>馬庫斯與公司（Marcus & Co.）</strong>：東方影響的新藝術風格</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=新藝術珠寶設計師作品" alt="新藝術珠寶設計師作品">
+                    <p class="caption">各國新藝術珠寶設計師的代表作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新藝術珠寶類型 -->
+    <div class="slide" id="slide7">
+        <h1>新藝術珠寶類型</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>身體裝飾</h3>
+                <ul>
+                    <li><strong>胸針</strong>：最具代表性的新藝術珠寶</li>
+                    <li><strong>吊墜</strong>：常有長鏈與流蘇設計</li>
+                    <li><strong>髮飾</strong>：精緻的梳子與髮針</li>
+                    <li><strong>手鐲</strong>：蛇形與花卉纏繞設計</li>
+                </ul>
+                <h3>功能性珠寶</h3>
+                <ul>
+                    <li><strong>腰帶扣</strong>：大型裝飾性設計</li>
+                    <li><strong>帽針</strong>：長型設計配合當時帽飾</li>
+                    <li><strong>香水瓶</strong>：珠寶質感的隨身容器</li>
+                    <li><strong>錶鏈與墜飾</strong>：實用與裝飾結合</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=新藝術珠寶類型" alt="新藝術珠寶類型">
+                    <p class="caption">各類新藝術風格珠寶</p>
+                </div>
+                <h3>室內裝飾品</h3>
+                <ul>
+                    <li><strong>鏡框</strong>：精緻的桌鏡設計</li>
+                    <li><strong>小雕像</strong>：半寶石與金屬結合</li>
+                    <li><strong>首飾盒</strong>：藝術品質感的容器</li>
+                </ul>
+                <h3>男性珠寶</h3>
+                <ul>
+                    <li><strong>領帶別針</strong>：昆蟲與動物主題</li>
+                    <li><strong>袖扣</strong>：幾何與自然元素</li>
+                    <li><strong>煙斗與煙盒</strong>：精緻的日用品</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第一次世界大戰的影響 -->
+    <div class="slide" id="slide8">
+        <h1>第一次世界大戰的影響</h1>
+        <h2>珠寶設計的轉折點</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>社會變革</h3>
+                <ul>
+                    <li>貴族社會的衰落</li>
+                    <li>女性角色的轉變</li>
+                    <li>奢侈品消費觀念的改變</li>
+                    <li>實用主義的興起</li>
+                </ul>
+                <h3>設計轉變</h3>
+                <ul>
+                    <li>從有機曲線到幾何形態</li>
+                    <li>從繁複裝飾到簡潔線條</li>
+                    <li>從自然主義到抽象主義</li>
+                    <li>從手工藝強調到機械美學</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>材料與工藝變化</h3>
+                <ul>
+                    <li>貴金屬短缺與替代材料</li>
+                    <li>工業生產技術的應用</li>
+                    <li>合成材料的發展</li>
+                    <li>簡化工藝的普及</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=戰爭前後珠寶對比" alt="戰爭前後珠寶對比">
+                    <p class="caption">第一次世界大戰前後珠寶風格的對比</p>
+                </div>
+            </div>
+        </div>
+        <p class="highlight">第一次世界大戰是珠寶設計從新藝術運動向裝飾藝術風格轉變的關鍵轉折點。</p>
+    </div>
+
+    <!-- 裝飾藝術時期背景 -->
+    <div class="slide" id="slide9">
+        <h1>裝飾藝術時期背景</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>時代背景與起源</h3>
+                <ul>
+                    <li>1920-30年代的「爵士時代」</li>
+                    <li>1925年巴黎國際裝飾藝術博覽會</li>
+                    <li>戰後重建與樂觀情緒</li>
+                    <li>現代主義思潮的興起</li>
+                    <li>殖民地文化的影響</li>
+                </ul>
+                <h3>社會文化背景</h3>
+                <ul>
+                    <li>「飛揚的二十年代」生活方式</li>
+                    <li>女性解放運動的進展</li>
+                    <li>都市化與消費文化</li>
+                    <li>好萊塢電影的影響</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=裝飾藝術時期背景" alt="裝飾藝術時期背景">
+                    <p class="caption">1925年巴黎國際裝飾藝術博覽會</p>
+                </div>
+                <h3>核心美學理念</h3>
+                <ul>
+                    <li>幾何形態與對稱構圖</li>
+                    <li>簡潔線條與平面處理</li>
+                    <li>鮮明色彩對比</li>
+                    <li>速度與動感的表現</li>
+                    <li>奢華與功能的結合</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 裝飾藝術珠寶特點 -->
+    <div class="slide" id="slide10">
+        <h1>裝飾藝術珠寶特點</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>設計風格</h3>
+                <ul>
+                    <li>幾何形態：方形、三角形、圓形</li>
+                    <li>對比鮮明的色彩組合</li>
+                    <li>簡潔有力的線條</li>
+                    <li>平面化與抽象化處理</li>
+                    <li>對稱與規則性的重視</li>
+                </ul>
+                <h3>常見主題</h3>
+                <ul>
+                    <li>幾何圖案與抽象形態</li>
+                    <li>埃及與東方元素</li>
+                    <li>機械與工業美學</li>
+                    <li>都市景觀與建築元素</li>
+                    <li>風格化的動植物</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=裝飾藝術珠寶特點" alt="裝飾藝術珠寶特點">
+                    <p class="caption">裝飾藝術風格的幾何形態與色彩對比</p>
+                </div>
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>白金的廣泛使用</li>
+                    <li>鑽石與彩色寶石的對比</li>
+                    <li>黑白對比：縞瑪瑙、珊瑚、琺瑯</li>
+                    <li>新型材料：塑料、鋁、鉻</li>
+                    <li>切割技術的革新：階梯式切割</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 裝飾藝術珠寶大師：卡地亞 -->
+    <div class="slide" id="slide11">
+        <h1>裝飾藝術珠寶大師：卡地亞</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>卡地亞與裝飾藝術</h3>
+                <ul>
+                    <li>從家族企業到國際品牌</li>
+                    <li>路易·卡地亞的創新領導</li>
+                    <li>「三兄弟」時期的全球擴張</li>
+                    <li>1925年巴黎博覽會的成功</li>
+                </ul>
+                <h3>設計風格</h3>
+                <ul>
+                    <li>「現代風格」的開創者</li>
+                    <li>東方元素的融合：「Tutti Frutti」系列</li>
+                    <li>幾何形態的精準表達</li>
+                    <li>黑白對比的經典運用</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=卡地亞裝飾藝術珠寶" alt="卡地亞裝飾藝術珠寶">
+                    <p class="caption">卡地亞的裝飾藝術風格作品</p>
+                </div>
+                <h3>代表作品</h3>
+                <ul>
+                    <li>「坦克」腕錶（1917年）</li>
+                    <li>「印度風格」項鍊與胸針</li>
+                    <li>「美洲豹」系列</li>
+                    <li>「神廟」門形胸針</li>
+                    <li>「Mystery Clock」神秘鐘</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 其他裝飾藝術珠寶設計師與品牌 -->
+    <div class="slide" id="slide12">
+        <h1>其他裝飾藝術珠寶設計師與品牌</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>法國</h3>
+                <ul>
+                    <li><strong>梵克雅寶（Van Cleef & Arpels）</strong>：無邊鑲嵌技術</li>
+                    <li><strong>布歇龍（Boucheron）</strong>：大膽的色彩組合</li>
+                    <li><strong>雷蒙德·坦普勒（Raymond Templier）</strong>：幾何抽象派</li>
+                    <li><strong>讓·杜普（Jean Després）</strong>：工業美學的先驅</li>
+                </ul>
+                <h3>美國</h3>
+                <ul>
+                    <li><strong>提芬尼（Tiffany & Co.）</strong>：美國裝飾藝術風格</li>
+                    <li><strong>馬庫斯（Marcus & Co.）</strong>：東方影響的裝飾藝術</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>英國</h3>
+                <ul>
+                    <li><strong>H.G. Murphy</strong>：英國裝飾藝術代表</li>
+                    <li><strong>西伯利（Sibyl Dunlop）</strong>：凱爾特影響的設計</li>
+                </ul>
+                <h3>義大利</h3>
+                <ul>
+                    <li><strong>布爾加利（Bulgari）</strong>：羅馬風格的裝飾藝術</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=裝飾藝術珠寶設計師作品" alt="裝飾藝術珠寶設計師作品">
+                    <p class="caption">各國裝飾藝術珠寶設計師的代表作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 裝飾藝術珠寶類型 -->
+    <div class="slide" id="slide13">
+        <h1>裝飾藝術珠寶類型</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>女性珠寶</h3>
+                <ul>
+                    <li><strong>長項鍊（Sautoir）</strong>：配合長身連衣裙</li>
+                    <li><strong>手鐲與手環</strong>：寬版幾何設計</li>
+                    <li><strong>胸針</strong>：幾何形狀與抽象圖案</li>
+                    <li><strong>耳環</strong>：垂墜式設計配合短髮</li>
+                    <li><strong>頭飾</strong>：額帶與髮夾</li>
+                </ul>
+                <h3>男性珠寶</h3>
+                <ul>
+                    <li><strong>袖扣</strong>：幾何形狀與抽象圖案</li>
+                    <li><strong>領帶別針</strong>：簡潔線條設計</li>
+                    <li><strong>煙盒與打火機</strong>：裝飾藝術風格配件</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=裝飾藝術珠寶類型" alt="裝飾藝術珠寶類型">
+                    <p class="caption">各類裝飾藝術風格珠寶</p>
+                </div>
+                <h3>腕錶與配件</h3>
+                <ul>
+                    <li><strong>女士腕錶</strong>：幾何形狀錶殼</li>
+                    <li><strong>化妝盒（Nécessaire）</strong>：多功能隨身盒</li>
+                    <li><strong>香煙盒</strong>：琺瑯與寶石裝飾</li>
+                    <li><strong>手包扣</strong>：裝飾藝術風格配件</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 珠寶與時尚的關係 -->
+    <div class="slide" id="slide14">
+        <h1>珠寶與時尚的關係</h1>
+        <h2>1890-1940年的服飾與珠寶協調</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>新藝術時期（1890-1915）</h3>
+                <ul>
+                    <li>S形曲線服裝與流動線條珠寶</li>
+                    <li>高領服裝與胸針、項鍊的配合</li>
+                    <li>精緻髮型與複雜髮飾</li>
+                    <li>長手套與手鐲的搭配</li>
+                </ul>
+                <h3>戰爭過渡期（1915-1920）</h3>
+                <ul>
+                    <li>簡化服裝與實用珠寶</li>
+                    <li>軍裝元素與徽章式設計</li>
+                    <li>黑色服裝與珍珠、鑽石的對比</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>裝飾藝術時期（1920-1940）</h3>
+                <ul>
+                    <li>「飛揚的二十年代」短裙與長項鍊</li>
+                    <li>短髮造型與垂墜式耳環</li>
+                    <li>無袖連衣裙與手鐲的展示</li>
+                    <li>低腰線與腰帶扣、胸針的位置變化</li>
+                    <li>30年代回歸優雅與套裝珠寶</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶與時尚關係" alt="珠寶與時尚關係">
+                    <p class="caption">不同時期珠寶與服飾的搭配</p>
+                </div>
+            </div>
+        </div>
+        <p class="highlight">這一時期珠寶設計與時尚潮流緊密結合，相互影響，共同反映了社會文化的變遷。</p>
+    </div>
+
+    <!-- 材料與工藝革新 -->
+    <div class="slide" id="slide15">
+        <h1>材料與工藝革新</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>新材料的應用</h3>
+                <ul>
+                    <li><strong>塑料與人造材料</strong>：酚醛樹脂、賽璐珞</li>
+                    <li><strong>新型金屬</strong>：鋁、鉻、不銹鋼</li>
+                    <li><strong>非傳統寶石</strong>：黑玉、珊瑚、縞瑪瑙</li>
+                    <li><strong>合成寶石</strong>：早期人造寶石的發展</li>
+                </ul>
+                <h3>工藝技術創新</h3>
+                <ul>
+                    <li><strong>無邊鑲嵌（Invisible Setting）</strong>：梵克雅寶發明</li>
+                    <li><strong>階梯式切割（Step Cut）</strong>：適合裝飾藝術風格</li>
+                    <li><strong>機械加工技術</strong>：精確的幾何形態</li>
+                    <li><strong>新型琺瑯工藝</strong>：透明與不透明效果</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=材料與工藝革新" alt="材料與工藝革新">
+                    <p class="caption">新材料與創新工藝的應用</p>
+                </div>
+                <h3>生產方式變革</h3>
+                <ul>
+                    <li>手工藝與機械生產的結合</li>
+                    <li>設計師與工匠分工的明確化</li>
+                    <li>批量生產的精品珠寶</li>
+                    <li>仿製品市場的擴大</li>
+                </ul>
+                <h3>商業模式創新</h3>
+                <ul>
+                    <li>品牌概念的強化</li>
+                    <li>設計師署名的重要性</li>
+                    <li>百貨公司珠寶部門的發展</li>
+                    <li>廣告與時尚雜誌的推廣</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 總結 -->
+    <div class="slide" id="slide16">
+        <h1>今日課程總結</h1>
+        <h2>關鍵要點</h2>
+        <ol>
+            <li>新藝術運動珠寶以流動曲線與自然主題為特色，反映了19世紀末對工業化的反思</li>
+            <li>勒內·拉利克是新藝術珠寶的代表性設計師，將珠寶提升至純藝術地位</li>
+            <li>第一次世界大戰是珠寶設計從有機曲線向幾何形態轉變的關鍵轉折點</li>
+            <li>裝飾藝術珠寶以幾何形態、鮮明對比和簡潔線條為特點，反映了現代主義思潮</li>
+            <li>卡地亞等品牌在裝飾藝術時期確立了現代珠寶品牌的商業模式</li>
+            <li>1890-1940年間珠寶設計與時尚潮流緊密結合，共同反映了社會文化變遷</li>
+            <li>這一時期見證了珠寶材料與工藝的重要革新，奠定了現代珠寶設計的基礎</li>
+        </ol>
+        <h2>預告明日課程</h2>
+        <p>二戰後至1960年代的服飾珠寶</p>
+    </div>
+
+    <!-- 參考資料 -->
+    <div class="slide" id="slide17">
+        <h1>參考資料</h1>
+        <ul>
+            <li>Cera, Deanna Farneti. <em>Adorning Fashion: The History of Costume Jewellery to Modern Times</em>. ACC Art Books, 2019.</li>
+            <li>Becker, Vivienne. <em>Art Nouveau Jewelry</em>. Thames & Hudson, 2000.</li>
+            <li>Raulet, Sylvie. <em>Art Deco Jewelry</em>. Rizzoli, 2002.</li>
+            <li>Nadelhoffer, Hans. <em>Cartier: Jewelers Extraordinary</em>. Harry N. Abrams, 2007.</li>
+            <li>Brunhammer, Yvonne. <em>The Art Deco Style</em>. St. Martin's Press, 1998.</li>
+            <li>Greenbaum, Toni. <em>Messengers of Modernism: American Studio Jewelry 1940-1960</em>. Flammarion, 1996.</li>
+        </ul>
+        <h2>圖片來源</h2>
+        <p>所有圖片版權歸原作者所有，僅用於教育目的。</p>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>上一頁</button>
+        <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">17</span></div>
+        <button id="nextBtn" onclick="changeSlide(1)">下一頁</button>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > slides.length) {
+                slideIndex = slides.length;
+            }
+            if (n < 1) {
+                slideIndex = 1;
+            }
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            slides[slideIndex-1].classList.add('active');
+            document.getElementById('currentSlide').textContent = slideIndex;
+            
+            document.getElementById('prevBtn').disabled = (slideIndex === 1);
+            document.getElementById('nextBtn').disabled = (slideIndex === slides.length);
+            
+            // 滾動到頁面頂部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

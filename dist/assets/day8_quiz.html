@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第八天測驗：21世紀初的珠寶設計與當代趨勢</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .question h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .option {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        label:hover {
+            background-color: #f0f0f0;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        .score-display {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>第八天測驗：21世紀初的珠寶設計與當代趨勢</h1>
+        
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <h3>1. 21世紀初珠寶設計的主要特點是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="A"> A. 多元化、跨界與科技融合
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="B"> B. 回歸傳統與古典風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="C"> C. 單一風格與統一審美
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="D"> D. 完全放棄裝飾性
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q2">
+                <h3>2. 21世紀初，哪一種技術對珠寶設計產生了革命性影響？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="A"> A. 3D列印與數位製造
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="B"> B. 蒸汽動力
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="C"> C. 手工鍛造
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="D"> D. 失蠟法鑄造
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q3">
+                <h3>3. 21世紀初，哪一種珠寶設計趨勢反映了對可持續性與環保的關注？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="A"> A. 使用更多鑽石與寶石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="B"> B. 使用更多黃金與白金
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="C"> A. 使用更多塑料材料
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="D"> D. 道德採購、回收材料與環保設計
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q4">
+                <h3>4. 21世紀初，哪一種珠寶形式反映了對身體與珠寶關係的重新思考？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="A"> A. 可穿戴科技與智能珠寶
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="B"> B. 傳統婚戒
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="C"> C. 皇室珠寶
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="D"> D. 宗教珠寶
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q5">
+                <h3>5. 21世紀初，哪一位設計師以其創新的珠寶設計而聞名？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="A"> A. 喬治婭·福爾德（Georgie Forde）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="B"> B. 塞西·布魯姆菲爾德（Sevan Biçakçi）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="C"> C. 華萊士·陳（Wallace Chan）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="D"> D. 以上皆是
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q6">
+                <h3>6. 21世紀初，哪一種材料在當代珠寶設計中開始廣泛使用？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="A"> A. 鈦金屬與非傳統材料
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="B"> B. 僅限黃金與白金
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="C"> C. 僅限鑽石與寶石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="D"> D. 僅限木材與骨頭
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q7">
+                <h3>7. 21世紀初，哪一種珠寶設計趨勢反映了全球化與文化交流的影響？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="A"> A. 文化融合與多元文化靈感
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="B"> B. 僅限西方設計風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="C"> C. 僅限東方設計風格
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="D"> D. 完全拒絕文化元素
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q8">
+                <h3>8. 21世紀初，哪一種珠寶設計趨勢反映了對性別與身份的重新思考？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="A"> A. 性別中立與流動設計
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="B"> B. 更加強調傳統性別區分
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="C"> C. 完全放棄性別考量
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="D"> D. 僅為女性設計珠寶
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q9">
+                <h3>9. 21世紀初，哪一種珠寶銷售與推廣方式開始流行？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="A"> A. 僅限實體店鋪
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="B"> B. 社交媒體與網路銷售
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="C"> C. 僅限拍賣會
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="D"> D. 僅限私人銷售
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q10">
+                <h3>10. 21世紀初，哪一種珠寶設計趨勢反映了對個人化與定制的需求？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="A"> A. 大規模生產與標準化
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="B"> B. 個人化定制與獨特設計
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="C"> C. 完全放棄個人化
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="D"> D. 僅限複製古典設計
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submit-btn">提交答案</button>
+        </form>
+        
+        <div class="score-display" id="score-display"></div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // 正確答案
+            const correctAnswers = {
+                q1: "A",
+                q2: "A",
+                q3: "D",
+                q4: "A",
+                q5: "D",
+                q6: "A",
+                q7: "A",
+                q8: "A",
+                q9: "B",
+                q10: "B"
+            };
+            
+            let score = 100;
+            let answered = 0;
+            let correct = 0;
+            
+            // 檢查每個問題
+            for (let i = 1; i <= 10; i++) {
+                const questionId = 'q' + i;
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                
+                if (selectedOption) {
+                    answered++;
+                    if (selectedOption.value !== correctAnswers[questionId]) {
+                        score -= 10; // 每答錯一題扣10分
+                    } else {
+                        correct++;
+                    }
+                }
+            }
+            
+            // 顯示分數
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.innerHTML = `<strong>測驗結果</strong><br>
+                                     答對題數: ${correct} / 10<br>
+                                     總分: ${score} 分`;
+            scoreDisplay.style.display = 'block';
+            
+            // 滾動到結果區域
+            scoreDisplay.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

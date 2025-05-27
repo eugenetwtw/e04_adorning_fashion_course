@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十天課程：當代服飾珠寶的挑戰、趨勢與未來展望</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slide {
+            display: none;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            min-height: 500px;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            font-size: 1.2em;
+            color: var(--primary);
+            align-self: center;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="slide active" id="slide1">
+        <h1>當代服飾珠寶的挑戰、趨勢與未來展望</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=當代珠寶趨勢與未來" alt="當代珠寶趨勢與未來">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程</p>
+        </div>
+        <h2>第十天課程</h2>
+        <p>講師：[講師姓名]</p>
+        <p>日期：[日期]</p>
+    </div>
+
+    <!-- 課程概述 -->
+    <div class="slide" id="slide2">
+        <h1>課程概述</h1>
+        <h2>今日學習目標</h2>
+        <ul>
+            <li>總結服飾珠寶的歷史發展與演變軌跡</li>
+            <li>分析當代服飾珠寶面臨的主要挑戰</li>
+            <li>探討未來珠寶設計的關鍵趨勢與方向</li>
+            <li>理解珠寶行業的可持續發展路徑</li>
+            <li>掌握珠寶設計師的未來角色與機會</li>
+        </ul>
+        <h2>課程安排</h2>
+        <ol>
+            <li>上午：回顧與總結、當代挑戰分析</li>
+            <li>下午：未來趨勢探討、課程總結與展望</li>
+        </ol>
+    </div>
+
+    <!-- 歷史回顧與總結 -->
+    <div class="slide" id="slide3">
+        <h1>歷史回顧與總結</h1>
+        <h2>服飾珠寶的演變軌跡</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>古代至19世紀</h3>
+                <ul>
+                    <li>從儀式與象徵到裝飾與身份</li>
+                    <li>手工藝與工藝傳統的建立</li>
+                    <li>材料與技術的限制與突破</li>
+                    <li>社會階層與珠寶的關係</li>
+                    <li>區域特色與文化交流</li>
+                </ul>
+                <h3>20世紀前半期</h3>
+                <ul>
+                    <li>藝術運動對珠寶設計的影響</li>
+                    <li>工業化與大眾化的開始</li>
+                    <li>戰爭與經濟危機的影響</li>
+                    <li>時尚與珠寶的緊密結合</li>
+                    <li>設計師品牌的崛起</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>20世紀後半期</h3>
+                <ul>
+                    <li>後現代主義與實驗設計</li>
+                    <li>材料創新與技術突破</li>
+                    <li>次文化與街頭風格的影響</li>
+                    <li>全球化與文化多元性</li>
+                    <li>消費主義與品牌價值</li>
+                </ul>
+                <h3>21世紀初</h3>
+                <ul>
+                    <li>數位革命與新製造方式</li>
+                    <li>可持續發展與道德意識</li>
+                    <li>個人化與客製化需求</li>
+                    <li>社交媒體與新消費模式</li>
+                    <li>跨界合作與學科融合</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x300.png?text=珠寶歷史演變" alt="珠寶歷史演變">
+            <p class="caption">服飾珠寶的歷史演變軌跡</p>
+        </div>
+    </div>
+
+    <!-- 關鍵主題回顧 -->
+    <div class="slide" id="slide4">
+        <h1>關鍵主題回顧</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>從貴重材料到多元媒材</li>
+                    <li>傳統工藝的保存與創新</li>
+                    <li>新技術與製造方法的發展</li>
+                    <li>材料選擇的意義與價值</li>
+                </ul>
+                <h3>設計與美學</h3>
+                <ul>
+                    <li>風格流派的演變與循環</li>
+                    <li>形式與功能的平衡</li>
+                    <li>文化影響與跨界靈感</li>
+                    <li>個人表達與集體審美</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>社會與文化意義</h3>
+                <ul>
+                    <li>身份象徵與社會階層</li>
+                    <li>性別表達與權力關係</li>
+                    <li>文化認同與全球化</li>
+                    <li>記憶、情感與個人敘事</li>
+                </ul>
+                <h3>商業與市場</h3>
+                <ul>
+                    <li>奢侈品與大眾市場的發展</li>
+                    <li>品牌建設與營銷策略</li>
+                    <li>消費者行為與偏好變化</li>
+                    <li>新商業模式與銷售渠道</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">服飾珠寶不僅是裝飾品，更是反映社會、文化、技術與經濟變遷的重要載體，其發展軌跡展現了人類審美與價值觀的演變。</p>
+    </div>
+
+    <!-- 當代挑戰：可持續性 -->
+    <div class="slide" id="slide5">
+        <h1>當代挑戰：可持續性</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>環境挑戰</h3>
+                <ul>
+                    <li>採礦業的生態破壞</li>
+                    <li>水資源污染與土地退化</li>
+                    <li>碳排放與氣候變化</li>
+                    <li>化學物質使用與廢棄物</li>
+                    <li>生物多樣性喪失</li>
+                </ul>
+                <h3>社會挑戰</h3>
+                <ul>
+                    <li>勞工權益與工作條件</li>
+                    <li>衝突礦區與人權問題</li>
+                    <li>社區發展與土地權利</li>
+                    <li>工藝傳承與文化保護</li>
+                    <li>公平貿易與收入分配</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶可持續性挑戰" alt="珠寶可持續性挑戰">
+                    <p class="caption">珠寶行業面臨的可持續性挑戰</p>
+                </div>
+                <h3>應對策略</h3>
+                <ul>
+                    <li>可追溯性與透明供應鏈</li>
+                    <li>認證標準與行業規範</li>
+                    <li>回收材料與循環設計</li>
+                    <li>替代材料與創新工藝</li>
+                    <li>消費者教育與意識提升</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">可持續性已成為珠寶行業最迫切的挑戰，需要從材料選擇、設計理念、生產方式到商業模式的全面變革。</p>
+    </div>
+
+    <!-- 當代挑戰：數位化與技術 -->
+    <div class="slide" id="slide6">
+        <h1>當代挑戰：數位化與技術</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>數位設計與製造</h3>
+                <ul>
+                    <li>CAD/CAM技術的普及與限制</li>
+                    <li>3D列印與傳統工藝的平衡</li>
+                    <li>參數化設計與演算法美學</li>
+                    <li>數位技能與教育培訓</li>
+                    <li>技術標準化與創意個性</li>
+                </ul>
+                <h3>數位營銷與銷售</h3>
+                <ul>
+                    <li>社交媒體與影響力營銷</li>
+                    <li>電子商務與實體體驗</li>
+                    <li>虛擬試戴與增強現實</li>
+                    <li>數據分析與個人化推薦</li>
+                    <li>數位敘事與品牌建設</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶數位化挑戰" alt="珠寶數位化挑戰">
+                    <p class="caption">珠寶行業的數位化與技術挑戰</p>
+                </div>
+                <h3>新興技術影響</h3>
+                <ul>
+                    <li>區塊鏈與供應鏈透明度</li>
+                    <li>NFT與數位收藏品</li>
+                    <li>人工智能輔助設計</li>
+                    <li>物聯網與智能珠寶</li>
+                    <li>元宇宙與虛擬時尚</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">數位化既為珠寶行業帶來前所未有的機遇，也帶來了技術、美學與商業模式的深刻挑戰，需要平衡創新與傳統。</p>
+    </div>
+
+    <!-- 當代挑戰：市場與消費者 -->
+    <div class="slide" id="slide7">
+        <h1>當代挑戰：市場與消費者</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>消費者行為變化</h3>
+                <ul>
+                    <li>千禧一代與Z世代的價值觀</li>
+                    <li>體驗優先於擁有權</li>
+                    <li>道德消費與社會責任</li>
+                    <li>個人化與自我表達需求</li>
+                    <li>數位原生代的購物習慣</li>
+                </ul>
+                <h3>市場結構變化</h3>
+                <ul>
+                    <li>大型集團與獨立設計師</li>
+                    <li>全球化與本土化的張力</li>
+                    <li>線上與線下渠道融合</li>
+                    <li>新興市場的崛起</li>
+                    <li>產業鏈整合與分散</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶市場挑戰" alt="珠寶市場挑戰">
+                    <p class="caption">珠寶市場與消費者行為的變化</p>
+                </div>
+                <h3>品牌與競爭策略</h3>
+                <ul>
+                    <li>品牌差異化與定位</li>
+                    <li>故事營銷與情感連結</li>
+                    <li>社群建設與忠誠度</li>
+                    <li>跨界合作與聯名策略</li>
+                    <li>靈活應對市場變化</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">理解並適應不斷變化的消費者需求與市場結構，是當代珠寶品牌與設計師面臨的關鍵挑戰。</p>
+    </div>
+
+    <!-- 當代挑戰：文化與認同 -->
+    <div class="slide" id="slide8">
+        <h1>當代挑戰：文化與認同</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>文化多元性</h3>
+                <ul>
+                    <li>全球化與本土文化保護</li>
+                    <li>文化挪用與尊重界限</li>
+                    <li>傳統工藝的現代詮釋</li>
+                    <li>跨文化對話與合作</li>
+                    <li>多元聲音與代表性</li>
+                </ul>
+                <h3>性別與身份</h3>
+                <ul>
+                    <li>性別流動與中性設計</li>
+                    <li>男性珠寶市場的擴展</li>
+                    <li>LGBTQ+社群的表達</li>
+                    <li>身體多樣性與包容性</li>
+                    <li>個人敘事與身份建構</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶文化認同挑戰" alt="珠寶文化認同挑戰">
+                    <p class="caption">珠寶設計中的文化與認同議題</p>
+                </div>
+                <h3>社會意義</h3>
+                <ul>
+                    <li>珠寶作為社會評論</li>
+                    <li>政治立場與價值表達</li>
+                    <li>社會運動與意識喚醒</li>
+                    <li>集體記憶與歷史反思</li>
+                    <li>社會責任與倫理設計</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">在全球化與多元化的背景下，珠寶設計需要更加敏感地處理文化、性別與身份認同的複雜議題。</p>
+    </div>
+
+    <!-- 未來趨勢：材料與工藝創新 -->
+    <div class="slide" id="slide9">
+        <h1>未來趨勢：材料與工藝創新</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>可持續材料</h3>
+                <ul>
+                    <li>實驗室培育寶石的進步</li>
+                    <li>生物材料與可降解選項</li>
+                    <li>回收金屬與寶石的標準化</li>
+                    <li>廢棄物轉化與再利用</li>
+                    <li>低環境影響的替代材料</li>
+                </ul>
+                <h3>高科技材料</h3>
+                <ul>
+                    <li>智能材料與反應性表面</li>
+                    <li>納米技術與微結構</li>
+                    <li>輕量化與高強度合金</li>
+                    <li>生物相容性與穿戴舒適度</li>
+                    <li>能源收集與儲存材料</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=未來材料與工藝" alt="未來材料與工藝">
+                    <p class="caption">未來珠寶的材料與工藝創新</p>
+                </div>
+                <h3>工藝融合</h3>
+                <ul>
+                    <li>數位與手工的協同</li>
+                    <li>跨學科技術的整合</li>
+                    <li>傳統工藝的現代轉化</li>
+                    <li>開源設計與知識共享</li>
+                    <li>分散式製造與本地生產</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">材料與工藝創新將持續推動珠寶設計的邊界擴展，同時需要平衡創新性、可持續性與文化傳承。</p>
+    </div>
+
+    <!-- 未來趨勢：功能與互動 -->
+    <div class="slide" id="slide10">
+        <h1>未來趨勢：功能與互動</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>智能珠寶</h3>
+                <ul>
+                    <li>健康監測與生物感測</li>
+                    <li>情緒反應與生理回饋</li>
+                    <li>環境互動與適應性</li>
+                    <li>通訊與連接功能</li>
+                    <li>數據收集與分析</li>
+                </ul>
+                <h3>互動體驗</h3>
+                <ul>
+                    <li>動態變化與可編程外觀</li>
+                    <li>用戶參與與共同創作</li>
+                    <li>個人化與適應性設計</li>
+                    <li>增強現實與虛擬層疊</li>
+                    <li>多感官體驗與回饋</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=功能與互動珠寶" alt="功能與互動珠寶">
+                    <p class="caption">具功能性與互動性的未來珠寶</p>
+                </div>
+                <h3>跨界應用</h3>
+                <ul>
+                    <li>醫療與健康管理</li>
+                    <li>安全與個人保護</li>
+                    <li>環境監測與意識</li>
+                    <li>身份認證與數據存儲</li>
+                    <li>能源與可持續生活</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">未來的珠寶將超越純粹裝飾的功能，融合技術與設計，創造更多互動、功能與個人化的可能性。</p>
+    </div>
+
+    <!-- 未來趨勢：虛擬與數位 -->
+    <div class="slide" id="slide11">
+        <h1>未來趨勢：虛擬與數位</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>數位珠寶</h3>
+                <ul>
+                    <li>虛擬時尚與數位配飾</li>
+                    <li>NFT珠寶與數位收藏</li>
+                    <li>元宇宙中的珠寶應用</li>
+                    <li>虛擬與實體珠寶的連結</li>
+                    <li>數位設計師與新市場</li>
+                </ul>
+                <h3>增強現實體驗</h3>
+                <ul>
+                    <li>AR試戴與虛擬展示</li>
+                    <li>混合現實中的珠寶</li>
+                    <li>數位層疊與物理增強</li>
+                    <li>互動式珠寶故事</li>
+                    <li>社交分享與虛擬社群</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=虛擬與數位珠寶" alt="虛擬與數位珠寶">
+                    <p class="caption">虛擬與數位領域的珠寶發展</p>
+                </div>
+                <h3>數位設計與製造</h3>
+                <ul>
+                    <li>AI輔助設計與生成</li>
+                    <li>雲端協作與遠程製造</li>
+                    <li>數位孿生與虛擬原型</li>
+                    <li>按需生產與零庫存</li>
+                    <li>開源設計與社群創新</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">虛擬與數位領域為珠寶設計開闢了全新疆界，模糊了實體與虛擬的界限，創造了前所未有的表達與體驗方式。</p>
+    </div>
+
+    <!-- 未來趨勢：商業模式創新 -->
+    <div class="slide" id="slide12">
+        <h1>未來趨勢：商業模式創新</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>共享與循環經濟</h3>
+                <ul>
+                    <li>珠寶租賃與訂閱服務</li>
+                    <li>二手市場與復古珠寶</li>
+                    <li>修復與改造服務</li>
+                    <li>回收計劃與材料循環</li>
+                    <li>社群共享與交換平台</li>
+                </ul>
+                <h3>個人化與共創</h3>
+                <ul>
+                    <li>客製化設計平台</li>
+                    <li>消費者參與設計過程</li>
+                    <li>模塊化與可調整珠寶</li>
+                    <li>個人故事與情感連結</li>
+                    <li>設計師與客戶的協作</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶商業模式創新" alt="珠寶商業模式創新">
+                    <p class="caption">珠寶行業的商業模式創新</p>
+                </div>
+                <h3>新零售與體驗</h3>
+                <ul>
+                    <li>線上線下融合體驗</li>
+                    <li>沉浸式展示與故事空間</li>
+                    <li>社交商務與社群營銷</li>
+                    <li>透明供應鏈與教育</li>
+                    <li>服務導向與終身關係</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">商業模式創新將重新定義珠寶的價值、擁有權與消費方式，促進更可持續、個人化與體驗導向的行業發展。</p>
+    </div>
+
+    <!-- 設計師的未來角色 -->
+    <div class="slide" id="slide13">
+        <h1>設計師的未來角色</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>多元技能與知識</h3>
+                <ul>
+                    <li>跨學科背景與整合能力</li>
+                    <li>數位與傳統技能的平衡</li>
+                    <li>材料科學與技術理解</li>
+                    <li>文化敏感性與全球視野</li>
+                    <li>商業思維與創意表達</li>
+                </ul>
+                <h3>社會責任</h3>
+                <ul>
+                    <li>可持續設計的倡導者</li>
+                    <li>文化傳承的守護者</li>
+                    <li>社會議題的回應者</li>
+                    <li>教育者與意識喚醒者</li>
+                    <li>社區建設與合作促進者</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=未來珠寶設計師" alt="未來珠寶設計師">
+                    <p class="caption">珠寶設計師的未來角色與機會</p>
+                </div>
+                <h3>創新與機會</h3>
+                <ul>
+                    <li>新材料與技術的探索者</li>
+                    <li>跨界合作的橋樑</li>
+                    <li>數位與實體領域的連接者</li>
+                    <li>個人品牌與全球平台</li>
+                    <li>新商業模式的創造者</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">未來的珠寶設計師將扮演更加多元的角色，需要平衡創意表達、技術創新、文化敏感性與社會責任。</p>
+    </div>
+
+    <!-- 教育與專業發展 -->
+    <div class="slide" id="slide14">
+        <h1>教育與專業發展</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>教育趨勢</h3>
+                <ul>
+                    <li>跨學科課程與整合學習</li>
+                    <li>數位技能與傳統工藝並重</li>
+                    <li>可持續設計與道德實踐</li>
+                    <li>全球視野與文化敏感性</li>
+                    <li>創業思維與商業知識</li>
+                </ul>
+                <h3>終身學習</h3>
+                <ul>
+                    <li>持續專業發展與更新</li>
+                    <li>線上學習與遠程教育</li>
+                    <li>同行交流與知識共享</li>
+                    <li>跨界學習與技能擴展</li>
+                    <li>實踐社群與合作學習</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶教育與發展" alt="珠寶教育與發展">
+                    <p class="caption">珠寶設計教育與專業發展的未來</p>
+                </div>
+                <h3>行業支持</h3>
+                <ul>
+                    <li>導師制與經驗傳承</li>
+                    <li>孵化器與加速器項目</li>
+                    <li>獎學金與創新資助</li>
+                    <li>展覽平台與國際交流</li>
+                    <li>行業組織與專業認證</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">珠寶設計教育與專業發展需要不斷適應行業變化，培養具備多元技能、全球視野與創新思維的未來設計師。</p>
+    </div>
+
+    <!-- 十天課程總結 -->
+    <div class="slide" id="slide15">
+        <h1>十天課程總結</h1>
+        <h2>關鍵學習成果</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>歷史與演變</h3>
+                <ul>
+                    <li>理解服飾珠寶的起源與發展</li>
+                    <li>掌握主要時期的風格特點</li>
+                    <li>認識重要設計師與品牌</li>
+                    <li>分析社會文化背景的影響</li>
+                </ul>
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>了解傳統與現代材料特性</li>
+                    <li>掌握主要製作工藝與技術</li>
+                    <li>認識創新材料與方法</li>
+                    <li>理解可持續材料的重要性</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>設計與美學</h3>
+                <ul>
+                    <li>分析設計元素與原則</li>
+                    <li>理解不同文化的美學特點</li>
+                    <li>掌握設計思維與方法</li>
+                    <li>培養批判性審美能力</li>
+                </ul>
+                <h3>當代與未來</h3>
+                <ul>
+                    <li>認識當前行業挑戰</li>
+                    <li>了解關鍵未來趨勢</li>
+                    <li>思考設計師的角色與責任</li>
+                    <li>探索個人發展路徑</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x200.png?text=課程總結" alt="課程總結">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程總結</p>
+        </div>
+    </div>
+
+    <!-- 未來學習與實踐 -->
+    <div class="slide" id="slide16">
+        <h1>未來學習與實踐</h1>
+        <h2>持續發展建議</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>知識拓展</h3>
+                <ul>
+                    <li>深入特定時期或風格研究</li>
+                    <li>跨學科知識的學習</li>
+                    <li>材料科學與技術更新</li>
+                    <li>商業與市場趨勢關注</li>
+                    <li>全球文化與設計探索</li>
+                </ul>
+                <h3>技能發展</h3>
+                <ul>
+                    <li>傳統工藝的精進</li>
+                    <li>數位工具的掌握</li>
+                    <li>設計思維的培養</li>
+                    <li>溝通與表達能力</li>
+                    <li>創業與項目管理</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>實踐機會</h3>
+                <ul>
+                    <li>個人創作與實驗</li>
+                    <li>參與展覽與競賽</li>
+                    <li>跨界合作與交流</li>
+                    <li>實習與工作經驗</li>
+                    <li>社區項目與社會實踐</li>
+                </ul>
+                <h3>資源與社群</h3>
+                <ul>
+                    <li>專業組織與協會</li>
+                    <li>線上平台與學習資源</li>
+                    <li>博物館與展覽</li>
+                    <li>設計師社群與網絡</li>
+                    <li>導師與同行支持</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">珠寶設計是一個不斷演變的領域，需要終身學習與實踐，結合傳統與創新，回應時代變化與個人願景。</p>
+    </div>
+
+    <!-- 課程結語 -->
+    <div class="slide" id="slide17">
+        <h1>課程結語</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x300.png?text=珠寶設計的無限可能" alt="珠寶設計的無限可能">
+            <p class="caption">服飾珠寶：過去、現在與未來</p>
+        </div>
+        <p>服飾珠寶不僅是裝飾品，更是人類創造力、文化表達與社會變遷的見證。從古老的儀式象徵到當代的個人敘事，從貴重材料的稀有性到創新技術的可能性，珠寶設計一直在演變與創新。</p>
+        <p>在這個充滿挑戰與機遇的時代，珠寶設計師需要平衡傳統與創新、美學與功能、個人表達與社會責任。通過深入理解歷史，敏銳把握當下，大膽想像未來，我們可以創造出既尊重過去又面向未來的珠寶設計。</p>
+        <p>希望這門課程為您提供了豐富的知識基礎、批判性思考能力與創新靈感，幫助您在珠寶設計的旅程中找到自己的聲音與方向。無論是作為設計師、收藏家、學者還是愛好者，我們都是這個豐富多彩的珠寶世界的參與者與貢獻者。</p>
+        <p>讓我們帶著對美的追求、對工藝的尊重、對創新的熱情，共同探索服飾珠寶的無限可能！</p>
+    </div>
+
+    <!-- 參考資料 -->
+    <div class="slide" id="slide18">
+        <h1>參考資料</h1>
+        <ul>
+            <li>Cera, Deanna Farneti. <em>Adorning Fashion: The History of Costume Jewellery to Modern Times</em>. ACC Art Books, 2019.</li>
+            <li>Cappellieri, Alba. <em>Jewellery in the Age of Modernism 1918-1940: Adornment and Beyond</em>. Bloomsbury Visual Arts, 2020.</li>
+            <li>Skinner, Damian. <em>Contemporary Jewelry in Perspective</em>. Lark Books, 2013.</li>
+            <li>Gaspar, Mònica. <em>On Jewellery: A Compendium of International Contemporary Art Jewellery</em>. Arnoldsche Art Publishers, 2013.</li>
+            <li>Bernabei, Roberta. <em>Contemporary Jewellers: Interviews with European Artists</em>. Berg Publishers, 2011.</li>
+            <li>Cheung, Lin, Beccy Clarke, and Indigo Clarke. <em>New Directions in Jewellery II</em>. Black Dog Publishing, 2006.</li>
+            <li>Astfalck, Jivan, Caroline Broadhead, and Paul Derrez. <em>New Directions in Jewellery</em>. Black Dog Publishing, 2005.</li>
+            <li>den Besten, Liesbeth. <em>On Jewellery: A Compendium of International Contemporary Art Jewellery</em>. Arnoldsche Art Publishers, 2011.</li>
+        </ul>
+        <h2>圖片來源</h2>
+        <p>所有圖片版權歸原作者所有，僅用於教育目的。</p>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>上一頁</button>
+        <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">18</span></div>
+        <button id="nextBtn" onclick="changeSlide(1)">下一頁</button>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > slides.length) {
+                slideIndex = slides.length;
+            }
+            if (n < 1) {
+                slideIndex = 1;
+            }
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            slides[slideIndex-1].classList.add('active');
+            document.getElementById('currentSlide').textContent = slideIndex;
+            
+            document.getElementById('prevBtn').disabled = (slideIndex === 1);
+            document.getElementById('nextBtn').disabled = (slideIndex === slides.length);
+            
+            // 滾動到頁面頂部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

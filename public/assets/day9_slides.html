@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第九天課程：特定地區/文化的影響：亞洲、非洲、拉丁美洲</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slide {
+            display: none;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            min-height: 500px;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            font-size: 1.2em;
+            color: var(--primary);
+            align-self: center;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="slide active" id="slide1">
+        <h1>特定地區/文化的影響：亞洲、非洲、拉丁美洲</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=全球文化珠寶" alt="全球文化珠寶">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程</p>
+        </div>
+        <h2>第九天課程</h2>
+        <p>講師：[講師姓名]</p>
+        <p>日期：[日期]</p>
+    </div>
+
+    <!-- 課程概述 -->
+    <div class="slide" id="slide2">
+        <h1>課程概述</h1>
+        <h2>今日學習目標</h2>
+        <ul>
+            <li>理解全球化背景下，不同地區文化對現代服飾珠寶的影響</li>
+            <li>分析亞洲（東亞、南亞、東南亞）傳統珠寶元素在現代設計中的應用</li>
+            <li>探討非洲（北非、撒哈拉以南非洲）珠寶傳統與當代設計的融合</li>
+            <li>辨識拉丁美洲（前哥倫布時期、殖民時期、現代）珠寶特色與影響</li>
+            <li>掌握文化交流、挪用與尊重的議題</li>
+        </ul>
+        <h2>課程安排</h2>
+        <ol>
+            <li>上午：亞洲的影響：傳統與現代的交織</li>
+            <li>下午：非洲與拉丁美洲的啟示：多元美學與文化傳承</li>
+        </ol>
+    </div>
+
+    <!-- 全球化與文化交流 -->
+    <div class="slide" id="slide3">
+        <h1>全球化與文化交流</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>文化流動與影響</h3>
+                <ul>
+                    <li>殖民主義與後殖民主義的影響</li>
+                    <li>全球貿易與旅遊的擴展</li>
+                    <li>移民與文化融合</li>
+                    <li>媒體與網路的傳播</li>
+                    <li>藝術與設計的跨文化對話</li>
+                </ul>
+                <h3>珠寶設計的表現</h3>
+                <ul>
+                    <li>異國情調（Exoticism）的演變</li>
+                    <li>傳統符號與圖案的借鑒</li>
+                    <li>材料與工藝的交流</li>
+                    <li>設計師的跨文化背景</li>
+                    <li>全球市場與本土特色的平衡</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=全球文化交流" alt="全球文化交流">
+                    <p class="caption">全球化背景下的文化交流與影響</p>
+                </div>
+                <h3>挑戰與議題</h3>
+                <ul>
+                    <li>文化挪用（Cultural Appropriation）</li>
+                    <li>刻板印象與表面化</li>
+                    <li>知識產權與傳統工藝保護</li>
+                    <li>文化敏感性與尊重</li>
+                    <li>真實性與商業化的平衡</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">在全球化背景下，理解不同地區文化的影響，並以尊重和敏感的態度進行設計，是當代珠寶設計師的重要課題。</p>
+    </div>
+
+    <!-- 亞洲的影響：東亞 -->
+    <div class="slide" id="slide4">
+        <h1>亞洲的影響：東亞（中國、日本、韓國）</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>中國</h3>
+                <ul>
+                    <li>玉石文化與象徵意義</li>
+                    <li>龍、鳳、祥雲等傳統圖案</li>
+                    <li>景泰藍、點翠等傳統工藝</li>
+                    <li>書法與水墨畫的線條美學</li>
+                    <li>當代設計師的文化詮釋</li>
+                </ul>
+                <h3>日本</h3>
+                <ul>
+                    <li>禪宗美學：簡約、自然、不對稱</li>
+                    <li>和服配飾：髮簪、帶留</li>
+                    <li>漆器、蒔繪、金工等精湛工藝</li>
+                    <li>自然主題：櫻花、竹、波浪</li>
+                    <li>現代設計中的極簡與精緻</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=東亞珠寶影響" alt="東亞珠寶影響">
+                    <p class="caption">東亞傳統元素在現代珠寶中的應用</p>
+                </div>
+                <h3>韓國</h3>
+                <ul>
+                    <li>傳統髮飾與服飾配件</li>
+                    <li>螺鈿漆器工藝</li>
+                    <li>簡潔線條與優雅形態</li>
+                    <li>傳統色彩組合（五方色）</li>
+                    <li>韓流文化與當代設計</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 亞洲的影響：南亞 -->
+    <div class="slide" id="slide5">
+        <h1>亞洲的影響：南亞（印度、巴基斯坦、尼泊爾等）</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>印度</h3>
+                <ul>
+                    <li>豐富的寶石資源與傳統</li>
+                    <li>黃金崇拜與婚嫁珠寶</li>
+                    <li>複雜精細的金工技術（Kundan, Meenakari）</li>
+                    <li>宗教符號與神話主題</li>
+                    <li>莫臥兒王朝的華麗風格</li>
+                </ul>
+                <h3>巴基斯坦</h3>
+                <ul>
+                    <li>部落珠寶與銀飾傳統</li>
+                    <li>幾何圖案與鑲嵌工藝</li>
+                    <li>中亞與伊斯蘭文化影響</li>
+                    <li>當代設計師的融合創新</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=南亞珠寶影響" alt="南亞珠寶影響">
+                    <p class="caption">南亞傳統珠寶的華麗風格與精湛工藝</p>
+                </div>
+                <h3>尼泊爾與西藏</h3>
+                <ul>
+                    <li>藏傳佛教符號與曼陀羅</li>
+                    <li>綠松石、珊瑚、琥珀的使用</li>
+                    <li>銀飾與手工敲打工藝</li>
+                    <li>護身符與宗教器物</li>
+                    <li>喜馬拉雅地區的獨特美學</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 亞洲的影響：東南亞 -->
+    <div class="slide" id="slide6">
+        <h1>亞洲的影響：東南亞（泰國、印尼、越南等）</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>泰國</h3>
+                <ul>
+                    <li>黃金與彩色寶石的運用</li>
+                    <li>佛教主題與精緻雕刻</li>
+                    <li>傳統舞蹈頭飾與配飾</li>
+                    <li>銀飾與山地部落工藝</li>
+                    <li>現代設計中的泰式優雅</li>
+                </ul>
+                <h3>印尼</h3>
+                <ul>
+                    <li>峇里島銀飾工藝</li>
+                    <li>蠟染（Batik）圖案的啟發</li>
+                    <li>部落珠寶與儀式性飾品</li>
+                    <li>珍珠與貝殼的運用</li>
+                    <li>多元文化的融合特色</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=東南亞珠寶影響" alt="東南亞珠寶影響">
+                    <p class="caption">東南亞地區的多元珠寶文化</p>
+                </div>
+                <h3>越南</h3>
+                <ul>
+                    <li>傳統漆器與鑲嵌工藝</li>
+                    <li>珍珠養殖與設計</li>
+                    <li>法國殖民時期風格影響</li>
+                    <li>竹、木等自然材料</li>
+                    <li>當代設計的文化復興</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重要設計師：受亞洲啟發 -->
+    <div class="slide" id="slide7">
+        <h1>重要設計師：受亞洲啟發</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>卡地亞（Cartier）</h3>
+                <ul>
+                    <li>「Tutti Frutti」水果錦囊風格（印度）</li>
+                    <li>中國風與日本風設計元素</li>
+                    <li>龍、寶塔、扇子等圖案</li>
+                    <li>玉石與珊瑚的運用</li>
+                </ul>
+                <h3>梵克雅寶（Van Cleef & Arpels）</h3>
+                <ul>
+                    <li>東方主題與異國情調</li>
+                    <li>漆器工藝的借鑒（日本）</li>
+                    <li>隱密式鑲嵌與精湛工藝</li>
+                    <li>蝴蝶與花卉主題（東亞）</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>華洛芙（Wallace Chan）</h3>
+                <ul>
+                    <li>香港當代珠寶大師</li>
+                    <li>融合東西方美學與技術</li>
+                    <li>鈦金屬與寶石雕刻創新</li>
+                    <li>佛教哲學與自然靈感</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=受亞洲啟發的設計" alt="受亞洲啟發的設計">
+                    <p class="caption">西方設計師受亞洲文化啟發的作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 非洲的影響：北非 -->
+    <div class="slide" id="slide8">
+        <h1>非洲的影響：北非（埃及、摩洛哥、突尼西亞等）</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>古埃及</h3>
+                <ul>
+                    <li>象徵符號：聖甲蟲、荷魯斯之眼</li>
+                    <li>黃金、青金石、綠松石、紅玉髓</li>
+                    <li>寬領飾（Usekh Collar）</li>
+                    <li>護身符與來世信仰</li>
+                    <li>對裝飾藝術時期的深遠影響</li>
+                </ul>
+                <h3>柏柏爾文化（Berber）</h3>
+                <ul>
+                    <li>銀飾傳統與幾何圖案</li>
+                    <li>大型胸針（Fibula）與頭飾</li>
+                    <li>琥珀、珊瑚與玻璃珠</li>
+                    <li>部落符號與保護意義</li>
+                    <li>摩洛哥與阿爾及利亞地區特色</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=北非珠寶影響" alt="北非珠寶影響">
+                    <p class="caption">北非地區的古老珠寶傳統</p>
+                </div>
+                <h3>伊斯蘭影響</h3>
+                <ul>
+                    <li>幾何圖案與蔓藤花紋</li>
+                    <li>書法藝術的應用</li>
+                    <li>金銀絲細工（Filigree）</li>
+                    <li>對稱與重複的美學</li>
+                    <li>突尼西亞與埃及的金飾</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 非洲的影響：撒哈拉以南非洲 -->
+    <div class="slide" id="slide9">
+        <h1>非洲的影響：撒哈拉以南非洲</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>西非（迦納、馬利、奈及利亞等）</h3>
+                <ul>
+                    <li>阿散蒂（Ashanti）黃金文化</li>
+                    <li>失蠟法鑄造技術</li>
+                    <li>玻璃珠貿易與設計（Krobo珠）</li>
+                    <li>圖阿雷格（Tuareg）銀飾與符號</li>
+                    <li>約魯巴（Yoruba）珠飾藝術</li>
+                </ul>
+                <h3>東非（肯亞、坦尚尼亞、衣索比亞等）</h3>
+                <ul>
+                    <li>馬賽（Maasai）珠飾與色彩象徵</li>
+                    <li>衣索比亞十字架與銀飾</li>
+                    <li>骨、角、木材等自然材料</li>
+                    <li>身體裝飾與社會地位</li>
+                    <li>斯瓦希里海岸的貿易影響</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=撒哈拉以南非洲珠寶" alt="撒哈拉以南非洲珠寶">
+                    <p class="caption">撒哈拉以南非洲豐富多彩的珠寶文化</p>
+                </div>
+                <h3>中南非（剛果、辛巴威、南非等）</h3>
+                <ul>
+                    <li>恩德貝勒（Ndebele）珠飾與壁畫</li>
+                    <li>祖魯（Zulu）珠飾語言</li>
+                    <li>銅、鐵等金屬的運用</li>
+                    <li>面具與儀式性飾品</li>
+                    <li>南非鑽石與寶石資源</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">撒哈拉以南非洲的珠寶文化極其多元，強調身體裝飾、社會意義與自然材料的運用，為當代設計提供了豐富靈感。</p>
+    </div>
+
+    <!-- 重要設計師：受非洲啟發 -->
+    <div class="slide" id="slide10">
+        <h1>重要設計師：受非洲啟發</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>伊夫·聖羅蘭（Yves Saint Laurent）</h3>
+                <ul>
+                    <li>北非風情與色彩運用</li>
+                    <li>大型木質與金屬配飾</li>
+                    <li>部落風格的現代詮釋</li>
+                    <li>1967年「非洲系列」</li>
+                </ul>
+                <h3>帕洛瑪·畢卡索（Paloma Picasso）</h3>
+                <ul>
+                    <li>為蒂芙尼設計的非洲主題系列</li>
+                    <li>大膽色彩與原始形態</li>
+                    <li>面具與部落符號的啟發</li>
+                    <li>金屬與木材的結合</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>當代非洲設計師</h3>
+                <ul>
+                    <li>阿黛爾·德雅克（Adele Dejak）（肯亞）</li>
+                    <li>薩皮爾·巴赫爾（Sapiir Bachar）（衣索比亞）</li>
+                    <li>帕特里克·馬弗羅斯（Patrick Mavros）（辛巴威）</li>
+                    <li>本土設計師的崛起與國際影響</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=受非洲啟發的設計" alt="受非洲啟發的設計">
+                    <p class="caption">西方與非洲本土設計師的作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 拉丁美洲的影響：前哥倫布時期 -->
+    <div class="slide" id="slide11">
+        <h1>拉丁美洲的影響：前哥倫布時期</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>中部美洲（阿茲特克、瑪雅）</h3>
+                <ul>
+                    <li>黃金、玉石、黑曜石、綠松石</li>
+                    <li>羽毛飾品與複雜頭飾</li>
+                    <li>宗教符號：羽蛇神、太陽神</li>
+                    <li>失蠟法與錘打金工技術</li>
+                    <li>祭祀與權力象徵</li>
+                </ul>
+                <h3>安地斯地區（印加、莫切）</h3>
+                <ul>
+                    <li>黃金、白銀、銅的合金技術</li>
+                    <li>精湛的金屬薄片工藝</li>
+                    <li>動物圖案：美洲豹、蛇、鳥</li>
+                    <li>大型耳飾、鼻飾、胸飾</li>
+                    <li>紡織品與珠寶的結合</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=前哥倫布時期珠寶" alt="前哥倫布時期珠寶">
+                    <p class="caption">前哥倫布時期精湛的金工與寶石藝術</p>
+                </div>
+                <h3>加勒比與亞馬遜地區</h3>
+                <ul>
+                    <li>貝殼、種子、骨骼、牙齒</li>
+                    <li>身體彩繪與穿刺</li>
+                    <li>編織與串珠技術</li>
+                    <li>與自然環境的緊密聯繫</li>
+                    <li>儀式性與薩滿教飾品</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 拉丁美洲的影響：殖民時期與現代 -->
+    <div class="slide" id="slide12">
+        <h1>拉丁美洲的影響：殖民時期與現代</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>殖民時期</h3>
+                <ul>
+                    <li>歐洲風格與本土元素的融合</li>
+                    <li>天主教宗教珠寶：十字架、聖牌</li>
+                    <li>銀礦開採與銀飾工藝（墨西哥、秘魯）</li>
+                    <li>巴洛克風格的華麗裝飾</li>
+                    <li>混血（Mestizo）文化的體現</li>
+                </ul>
+                <h3>20世紀</h3>
+                <ul>
+                    <li>墨西哥銀飾復興（塔斯科Taxco）</li>
+                    <li>威廉·斯普拉特林（William Spratling）</li>
+                    <li>前哥倫布圖案的重新詮釋</li>
+                    <li>民族主義與本土文化認同</li>
+                    <li>藝術家與設計師的探索</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=拉丁美洲現代珠寶" alt="拉丁美洲現代珠寶">
+                    <p class="caption">拉丁美洲殖民時期與現代珠寶</p>
+                </div>
+                <h3>當代設計</h3>
+                <ul>
+                    <li>豐富的寶石資源（哥倫比亞祖母綠、巴西彩寶）</li>
+                    <li>傳統工藝與現代設計的結合</li>
+                    <li>社會與政治議題的表達</li>
+                    <li>本土設計師的國際視野</li>
+                    <li>可持續發展與社區合作</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重要設計師：受拉丁美洲啟發 -->
+    <div class="slide" id="slide13">
+        <h1>重要設計師：受拉丁美洲啟發</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>威廉·斯普拉特林（William Spratling）</h3>
+                <ul>
+                    <li>「墨西哥銀飾之父」</li>
+                    <li>復興塔斯科銀飾工藝</li>
+                    <li>融合前哥倫布與現代設計</li>
+                    <li>培養了一代墨西哥銀匠</li>
+                </ul>
+                <h3>安東尼奧·皮內達（Antonio Pineda）</h3>
+                <ul>
+                    <li>塔斯科銀飾大師</li>
+                    <li>現代主義與墨西哥傳統結合</li>
+                    <li>雕塑感與寶石鑲嵌</li>
+                    <li>國際知名的墨西哥設計師</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>當代拉丁美洲設計師</h3>
+                <ul>
+                    <li>保拉·門多薩（Paula Mendoza）（哥倫比亞）</li>
+                    <li>費爾南多·豪爾赫（Fernando Jorge）（巴西）</li>
+                    <li>丹妮拉·維勒加斯（Daniela Villegas）（墨西哥）</li>
+                    <li>本土文化與全球視野的融合</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=受拉丁美洲啟發的設計" alt="受拉丁美洲啟發的設計">
+                    <p class="caption">受拉丁美洲文化啟發的設計作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文化挪用 vs 文化欣賞 -->
+    <div class="slide" id="slide14">
+        <h1>文化挪用 vs 文化欣賞</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>文化挪用（Cultural Appropriation）</h3>
+                <ul>
+                    <li>強勢文化借用弱勢文化元素</li>
+                    <li>缺乏理解與尊重</li>
+                    <li>剝奪原始文化背景與意義</li>
+                    <li>刻板印象的強化</li>
+                    <li>商業利益優先於文化尊重</li>
+                    <li>可能造成文化傷害</li>
+                </ul>
+                <h3>文化欣賞（Cultural Appreciation）</h3>
+                <ul>
+                    <li>基於學習與理解</li>
+                    <li>尊重原始文化背景與意義</li>
+                    <li>給予來源文化應有的承認</li>
+                    <li>避免刻板印象與表面化</li>
+                    <li>促進平等的文化交流</li>
+                    <li>建立合作與互惠關係</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=文化挪用vs欣賞" alt="文化挪用vs欣賞">
+                    <p class="caption">區分文化挪用與文化欣賞</p>
+                </div>
+                <h3>設計師的責任</h3>
+                <ul>
+                    <li>深入研究與學習</li>
+                    <li>尋求來源文化社群的意見</li>
+                    <li>標明靈感來源與致敬</li>
+                    <li>考慮合作與公平回饋</li>
+                    <li>避免使用神聖或敏感符號</li>
+                    <li>持續反思與對話</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">在跨文化設計中，設計師需要保持高度的文化敏感性，區分挪用與欣賞，以負責任的態度進行創作。</p>
+    </div>
+
+    <!-- 案例研究與討論 -->
+    <div class="slide" id="slide15">
+        <h1>案例研究與討論</h1>
+        <h2>案例一：卡地亞「Tutti Frutti」</h2>
+        <ul>
+            <li>靈感來源：印度莫臥兒王朝珠寶</li>
+            <li>設計特點：雕刻彩色寶石、鉑金鑲嵌</li>
+            <li>文化影響：西方對印度奢華的想像</li>
+            <li>討論點：是文化欣賞還是異國情調的挪用？</li>
+        </ul>
+        <h2>案例二：非洲面具在時尚中的應用</h2>
+        <ul>
+            <li>靈感來源：非洲部落儀式面具</li>
+            <li>設計應用：圖案、形態、配飾</li>
+            <li>文化背景：神聖性、儀式性、社會意義</li>
+            <li>討論點：如何避免剝奪原始意義與刻板印象？</li>
+        </ul>
+        <h2>案例三：當代設計師與傳統工匠合作</h2>
+        <ul>
+            <li>模式：設計師提供設計，工匠負責製作</li>
+            <li>優點：保護傳統工藝、創造就業、文化交流</li>
+            <li>挑戰：知識產權、公平報酬、設計主導權</li>
+            <li>討論點：如何建立公平互惠的合作關係？</li>
+        </ul>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x300.png?text=案例討論" alt="案例討論">
+            <p class="caption">跨文化設計案例分析</p>
+        </div>
+    </div>
+
+    <!-- 總結 -->
+    <div class="slide" id="slide16">
+        <h1>今日課程總結</h1>
+        <h2>關鍵要點</h2>
+        <ol>
+            <li>全球化促進了不同地區文化對現代服飾珠寶的深刻影響</li>
+            <li>亞洲珠寶傳統（玉石、金工、禪意、宗教符號）為現代設計提供了豐富元素</li>
+            <li>非洲珠寶文化（黃金、珠飾、部落符號、自然材料）展現了多元的美學與社會意義</li>
+            <li>拉丁美洲珠寶（前哥倫布金工、殖民融合、現代銀飾）反映了其獨特的歷史與文化</li>
+            <li>跨文化設計需要警惕文化挪用，強調文化欣賞、尊重與敏感性</li>
+            <li>設計師在借鑒其他文化元素時，應深入研究、標明來源並考慮合作</li>
+        </ol>
+        <h2>預告明日課程</h2>
+        <p>當代服飾珠寶的挑戰、趨勢與未來展望</p>
+    </div>
+
+    <!-- 參考資料 -->
+    <div class="slide" id="slide17">
+        <h1>參考資料</h1>
+        <ul>
+            <li>Cera, Deanna Farneti. <em>Adorning Fashion: The History of Costume Jewellery to Modern Times</em>. ACC Art Books, 2019.</li>
+            <li>Untracht, Oppi. <em>Traditional Jewelry of India</em>. Harry N. Abrams, 1997.</li>
+            <li>Fisher, Angela. <em>Africa Adorned</em>. Harry N. Abrams, 1984.</li>
+            <li>Berinstain, Valérie. <em>Ethnic Jewellery: From Africa, Asia and Pacific Islands</em>. The Pepin Press, 2002.</li>
+            <li>Embrey, Lester. <em>Pre-Columbian Gold: Technology, Style and Iconography</em>. British Museum Press, 2000.</li>
+            <li>Morrall, Andrew, and Melinda Watt, eds. <em>Ornament as Portable Culture: Between Globalism and Localism</em>. Bard Graduate Center, 2017.</li>
+        </ul>
+        <h2>圖片來源</h2>
+        <p>所有圖片版權歸原作者所有，僅用於教育目的。</p>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>上一頁</button>
+        <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">17</span></div>
+        <button id="nextBtn" onclick="changeSlide(1)">下一頁</button>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > slides.length) {
+                slideIndex = slides.length;
+            }
+            if (n < 1) {
+                slideIndex = 1;
+            }
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            slides[slideIndex-1].classList.add('active');
+            document.getElementById('currentSlide').textContent = slideIndex;
+            
+            document.getElementById('prevBtn').disabled = (slideIndex === 1);
+            document.getElementById('nextBtn').disabled = (slideIndex === slides.length);
+            
+            // 滾動到頁面頂部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

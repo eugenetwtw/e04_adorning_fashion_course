@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四天測驗：新藝術運動與裝飾藝術時期</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .question h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .option {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        label:hover {
+            background-color: #f0f0f0;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        .score-display {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>第四天測驗：新藝術運動與裝飾藝術時期</h1>
+        
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <h3>1. 新藝術運動（Art Nouveau）的時間範圍大約是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="A"> A. 1850-1870年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="B"> B. 1890-1910年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="C"> C. 1920-1940年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="D"> D. 1950-1970年
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q2">
+                <h3>2. 新藝術運動珠寶設計的主要特點是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="A"> A. 幾何形狀與直線
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="B"> B. 流動曲線與自然主題
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="C"> C. 極簡主義與單色調
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="D"> D. 工業化生產與標準化設計
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q3">
+                <h3>3. 以下哪位設計師不是新藝術運動時期的重要珠寶設計師？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="A"> A. 勒內·拉利克（René Lalique）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="B"> B. 路易斯·康福特·蒂芙尼（Louis Comfort Tiffany）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="C"> C. 喬治·傑森（Georg Jensen）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="D"> D. 可可·香奈兒（Coco Chanel）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q4">
+                <h3>4. 新藝術運動珠寶中常見的材料是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="A"> A. 鑽石與白金
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="B"> B. 琺瑯、玻璃與半寶石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="C"> C. 塑料與合成材料
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="D"> D. 不鏽鋼與鈦
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q5">
+                <h3>5. 裝飾藝術（Art Deco）風格的時間範圍大約是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="A"> A. 1890-1910年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="B"> B. 1920-1940年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="C"> C. 1950-1970年
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="D"> D. 1980-2000年
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q6">
+                <h3>6. 裝飾藝術珠寶設計的主要特點是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="A"> A. 流動曲線與自然主題
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="B"> B. 幾何形狀、對比色彩與簡潔線條
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="C"> C. 古典主題與對稱設計
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="D"> D. 極簡主義與單色調
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q7">
+                <h3>7. 以下哪一項不是裝飾藝術珠寶的靈感來源？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="A"> A. 埃及藝術
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="B"> B. 立體主義
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="C"> C. 機械與工業設計
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="D"> D. 浪漫主義風景畫
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q8">
+                <h3>8. 哪一家珠寶公司在裝飾藝術時期創造了「Mystery Setting」（神秘鑲嵌）技術？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="A"> A. 卡地亞（Cartier）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="B"> B. 梵克雅寶（Van Cleef & Arpels）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="C"> C. 蒂芙尼（Tiffany & Co.）
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="D"> D. 寶格麗（Bvlgari）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q9">
+                <h3>9. 新藝術運動與裝飾藝術時期，哪一種寶石切割方式變得流行？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="A"> A. 圓形明亮式切割
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="B"> B. 祖母綠切割
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="C"> C. 公主方形切割
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="D"> D. 階梯式切割（Step Cut）
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q10">
+                <h3>10. 1925年在巴黎舉辦的哪一個展覽被認為是裝飾藝術風格的命名來源？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="A"> A. 巴黎世界博覽會
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="B"> B. 現代裝飾與工業藝術國際博覽會
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="C"> C. 巴黎沙龍展
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="D"> D. 珠寶與鐘錶國際展
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submit-btn">提交答案</button>
+        </form>
+        
+        <div class="score-display" id="score-display"></div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // 正確答案
+            const correctAnswers = {
+                q1: "B",
+                q2: "B",
+                q3: "D",
+                q4: "B",
+                q5: "B",
+                q6: "B",
+                q7: "D",
+                q8: "B",
+                q9: "D",
+                q10: "B"
+            };
+            
+            let score = 100;
+            let answered = 0;
+            let correct = 0;
+            
+            // 檢查每個問題
+            for (let i = 1; i <= 10; i++) {
+                const questionId = 'q' + i;
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                
+                if (selectedOption) {
+                    answered++;
+                    if (selectedOption.value !== correctAnswers[questionId]) {
+                        score -= 10; // 每答錯一題扣10分
+                    } else {
+                        correct++;
+                    }
+                }
+            }
+            
+            // 顯示分數
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.innerHTML = `<strong>測驗結果</strong><br>
+                                     答對題數: ${correct} / 10<br>
+                                     總分: ${score} 分`;
+            scoreDisplay.style.display = 'block';
+            
+            // 滾動到結果區域
+            scoreDisplay.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

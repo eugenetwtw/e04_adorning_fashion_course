@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一天課程：服飾珠寶的起源與早期發展</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slide {
+            display: none;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            min-height: 500px;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            font-size: 1.2em;
+            color: var(--primary);
+            align-self: center;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="slide active" id="slide1">
+        <h1>服飾珠寶的起源與早期發展</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=史前珠寶圖片" alt="史前珠寶">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程</p>
+        </div>
+        <h2>第一天課程</h2>
+        <p>講師：[講師姓名]</p>
+        <p>日期：[日期]</p>
+    </div>
+
+    <!-- 課程概述 -->
+    <div class="slide" id="slide2">
+        <h1>課程概述</h1>
+        <h2>今日學習目標</h2>
+        <ul>
+            <li>理解人類為何開始佩戴珠寶裝飾</li>
+            <li>探索史前時期的珠寶材料與工藝</li>
+            <li>分析古埃及、美索不達米亞與愛琴海文明的珠寶特色</li>
+            <li>辨識早期珠寶的社會功能與象徵意義</li>
+            <li>掌握古代珠寶對現代設計的影響</li>
+        </ul>
+        <h2>課程安排</h2>
+        <ol>
+            <li>上午：珠寶起源與史前珠寶</li>
+            <li>下午：古代文明的珠寶藝術</li>
+        </ol>
+    </div>
+
+    <!-- 珠寶的起源 -->
+    <div class="slide" id="slide3">
+        <h1>珠寶的起源</h1>
+        <h2>為何人類開始佩戴珠寶？</h2>
+        <div class="two-column">
+            <div class="column">
+                <ul>
+                    <li><strong>身份與地位標誌</strong>：區分社會階層與身份</li>
+                    <li><strong>宗教與精神信仰</strong>：護身符與儀式用品</li>
+                    <li><strong>審美與裝飾需求</strong>：人類對美的天然追求</li>
+                    <li><strong>社交與交流功能</strong>：表達群體歸屬感</li>
+                    <li><strong>實用功能</strong>：固定衣物、收納小物</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=原始珠寶功能圖示" alt="珠寶功能">
+                    <p class="caption">珠寶的多重社會功能</p>
+                </div>
+            </div>
+        </div>
+        <p class="highlight">珠寶不僅是裝飾品，更是人類文明、社會結構與精神信仰的物質載體。</p>
+    </div>
+
+    <!-- 史前珠寶 -->
+    <div class="slide" id="slide4">
+        <h1>史前珠寶</h1>
+        <h2>舊石器時代（約公元前40,000-10,000年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>貝殼、骨骼、獸牙、石頭</li>
+                    <li>簡單的鑽孔、打磨技術</li>
+                    <li>以繩索或植物纖維串連</li>
+                </ul>
+                <h3>代表性發現</h3>
+                <ul>
+                    <li>克羅馬農人（Cro-Magnon）貝殼項鍊</li>
+                    <li>法國多爾多涅（Dordogne）地區的穿孔動物牙齒</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=舊石器時代珠寶" alt="舊石器時代珠寶">
+                    <p class="caption">舊石器時代的貝殼與獸牙裝飾品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新石器時代珠寶 -->
+    <div class="slide" id="slide5">
+        <h1>史前珠寶</h1>
+        <h2>新石器時代（約公元前10,000-3,000年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>材料與工藝的進步</h3>
+                <ul>
+                    <li>半寶石（如綠松石、青金石）的使用</li>
+                    <li>陶土珠子的出現</li>
+                    <li>更精細的鑽孔與打磨技術</li>
+                    <li>定居生活促進工藝發展</li>
+                </ul>
+                <h3>代表性發現</h3>
+                <ul>
+                    <li>土耳其恰塔霍裕克（Çatalhöyük）的珠寶</li>
+                    <li>埃及巴達里文化（Badarian）的石珠</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=新石器時代珠寶" alt="新石器時代珠寶">
+                    <p class="caption">新石器時代的半寶石與陶土珠飾</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 青銅時代珠寶 -->
+    <div class="slide" id="slide6">
+        <h1>史前珠寶</h1>
+        <h2>青銅時代（約公元前3,000-1,200年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>金屬工藝的革命</h3>
+                <ul>
+                    <li>黃金、銀、銅、青銅的廣泛使用</li>
+                    <li>鑄造、錘鍱、焊接等技術發展</li>
+                    <li>複雜圖案與精細工藝的出現</li>
+                </ul>
+                <h3>代表性發現</h3>
+                <ul>
+                    <li>特洛伊的普里阿摩斯寶藏（Priam's Treasure）</li>
+                    <li>英國布什巴羅（Bush Barrow）的金飾</li>
+                    <li>中國二里頭文化的玉器與青銅器</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=青銅時代珠寶" alt="青銅時代珠寶">
+                    <p class="caption">青銅時代的金屬珠寶工藝</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 古埃及珠寶 -->
+    <div class="slide" id="slide7">
+        <h1>古代文明的珠寶藝術</h1>
+        <h2>古埃及珠寶（約公元前3100-30年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>特點與風格</h3>
+                <ul>
+                    <li>豐富的色彩與象徵性圖案</li>
+                    <li>幾何對稱與平衡的設計</li>
+                    <li>宗教與來世信仰的體現</li>
+                    <li>精湛的鑲嵌與細工技術</li>
+                </ul>
+                <h3>常見材料</h3>
+                <ul>
+                    <li>黃金（象徵太陽與永恆）</li>
+                    <li>青金石（象徵天空與神性）</li>
+                    <li>綠松石（象徵再生與生命）</li>
+                    <li>紅玉髓（象徵生命力）</li>
+                    <li>法郎陶（faience，藍綠色釉陶）</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=古埃及珠寶" alt="古埃及珠寶">
+                    <p class="caption">圖坦卡門的黃金胸飾</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 古埃及珠寶類型 -->
+    <div class="slide" id="slide8">
+        <h1>古埃及珠寶</h1>
+        <h2>主要珠寶類型</h2>
+        <ul>
+            <li><strong>寬領飾（Usekh）</strong>：覆蓋肩部的大型項鍊，象徵權力與保護</li>
+            <li><strong>胸飾（Pectoral）</strong>：裝飾精美的胸前飾物，常有象徵性圖案</li>
+            <li><strong>護身符（Amulets）</strong>：如聖甲蟲、荷魯斯之眼、安卡十字等</li>
+            <li><strong>頭飾與冠冕</strong>：表示身份與地位的頭部裝飾</li>
+            <li><strong>手鐲與腳鐲</strong>：常成對佩戴，有保護作用</li>
+            <li><strong>戒指與耳環</strong>：各階層均有佩戴，設計各異</li>
+        </ul>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x250.png?text=古埃及珠寶類型展示" alt="古埃及珠寶類型">
+            <p class="caption">不同類型的古埃及珠寶</p>
+        </div>
+    </div>
+
+    <!-- 美索不達米亞珠寶 -->
+    <div class="slide" id="slide9">
+        <h1>古代文明的珠寶藝術</h1>
+        <h2>美索不達米亞珠寶（約公元前4500-539年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>特點與風格</h3>
+                <ul>
+                    <li>精細的金銀細工</li>
+                    <li>自然主義與幾何圖案並存</li>
+                    <li>豐富的神話與宗教象徵</li>
+                    <li>顆粒狀裝飾（Granulation）技術</li>
+                </ul>
+                <h3>代表性發現</h3>
+                <ul>
+                    <li>烏爾王陵（Royal Tombs of Ur）的珠寶</li>
+                    <li>尼姆羅德（Nimrud）的金飾</li>
+                    <li>瑪麗（Mari）的珠寶收藏</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=美索不達米亞珠寶" alt="美索不達米亞珠寶">
+                    <p class="caption">烏爾王陵出土的金冠與首飾</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 愛琴海文明珠寶 -->
+    <div class="slide" id="slide10">
+        <h1>古代文明的珠寶藝術</h1>
+        <h2>愛琴海文明珠寶（約公元前3000-1100年）</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>米諾斯文明（克里特島）</h3>
+                <ul>
+                    <li>自然主義風格，海洋生物主題</li>
+                    <li>精細的金工與寶石鑲嵌</li>
+                    <li>彩色玻璃珠的使用</li>
+                </ul>
+                <h3>邁錫尼文明</h3>
+                <ul>
+                    <li>更加華麗與誇張的風格</li>
+                    <li>精湛的金箔壓花技術</li>
+                    <li>面具與葬禮珠寶的重要性</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=愛琴海文明珠寶" alt="愛琴海文明珠寶">
+                    <p class="caption">邁錫尼黃金面具與米諾斯蜜蜂吊墜</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 早期珠寶的社會功能 -->
+    <div class="slide" id="slide11">
+        <h1>早期珠寶的社會功能</h1>
+        <h2>珠寶作為社會符號系統</h2>
+        <ul>
+            <li><strong>權力與地位標誌</strong>：王權、貴族身份的視覺表達</li>
+            <li><strong>宗教與儀式功能</strong>：祭司裝飾、神像裝飾、葬禮用品</li>
+            <li><strong>護身與信仰象徵</strong>：驅邪、祈福、保護的物質載體</li>
+            <li><strong>性別與年齡標記</strong>：區分男女、成人與兒童、已婚與未婚</li>
+            <li><strong>財富儲存與交換媒介</strong>：珠寶作為財富形式與禮物交換</li>
+            <li><strong>文化認同與族群標識</strong>：表達群體歸屬與文化身份</li>
+        </ul>
+        <p class="highlight">珠寶是古代社會複雜符號系統的一部分，通過視覺語言傳達豐富的社會信息。</p>
+    </div>
+
+    <!-- 古代珠寶對現代的影響 -->
+    <div class="slide" id="slide12">
+        <h1>古代珠寶對現代設計的影響</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>設計元素的延續</h3>
+                <ul>
+                    <li>埃及復興風格（Egyptian Revival）</li>
+                    <li>古典主義設計中的希臘元素</li>
+                    <li>現代護身符珠寶的流行</li>
+                </ul>
+                <h3>工藝技術的傳承</h3>
+                <ul>
+                    <li>顆粒狀裝飾（Granulation）</li>
+                    <li>絲細工（Filigree）</li>
+                    <li>鑲嵌技術（Inlay）</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=古今珠寶對比" alt="古今珠寶對比">
+                    <p class="caption">古代元素在現代珠寶設計中的應用</p>
+                </div>
+            </div>
+        </div>
+        <p class="highlight">了解珠寶的起源與早期發展，有助於我們理解當代設計的歷史根源與文化內涵。</p>
+    </div>
+
+    <!-- 總結 -->
+    <div class="slide" id="slide13">
+        <h1>今日課程總結</h1>
+        <h2>關鍵要點</h2>
+        <ol>
+            <li>珠寶起源於人類的多重需求：裝飾、身份標識、宗教信仰等</li>
+            <li>史前珠寶從簡單的天然材料發展到複雜的金屬工藝</li>
+            <li>古埃及珠寶以其色彩豐富、象徵性強、工藝精湛而著稱</li>
+            <li>美索不達米亞珠寶展現了精細的金銀細工與豐富的神話元素</li>
+            <li>愛琴海文明珠寶融合了自然主義與精湛的金工技術</li>
+            <li>早期珠寶是複雜社會符號系統的一部分，傳達豐富的社會信息</li>
+            <li>古代珠寶元素與工藝持續影響著現代設計</li>
+        </ol>
+        <h2>預告明日課程</h2>
+        <p>中世紀至文藝復興時期的服飾珠寶（500-1700年）</p>
+    </div>
+
+    <!-- 參考資料 -->
+    <div class="slide" id="slide14">
+        <h1>參考資料</h1>
+        <ul>
+            <li>Cera, Deanna Farneti. <em>Adorning Fashion: The History of Costume Jewellery to Modern Times</em>. ACC Art Books, 2019.</li>
+            <li>Andrews, Carol. <em>Ancient Egyptian Jewellery</em>. British Museum Publications, 1990.</li>
+            <li>Ogden, Jack. <em>Jewellery of the Ancient World</em>. Trefoil Books, 1982.</li>
+            <li>Tait, Hugh (ed.). <em>7000 Years of Jewellery</em>. British Museum Press, 2006.</li>
+            <li>Maxwell-Hyslop, K. R. <em>Western Asiatic Jewellery: c. 3000-612 B.C.</em> Methuen, 1971.</li>
+            <li>Higgins, Reynold. <em>Greek and Roman Jewellery</em>. University of California Press, 1980.</li>
+        </ul>
+        <h2>圖片來源</h2>
+        <p>所有圖片版權歸原作者所有，僅用於教育目的。</p>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>上一頁</button>
+        <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">14</span></div>
+        <button id="nextBtn" onclick="changeSlide(1)">下一頁</button>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > slides.length) {
+                slideIndex = slides.length;
+            }
+            if (n < 1) {
+                slideIndex = 1;
+            }
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            slides[slideIndex-1].classList.add('active');
+            document.getElementById('currentSlide').textContent = slideIndex;
+            
+            document.getElementById('prevBtn').disabled = (slideIndex === 1);
+            document.getElementById('nextBtn').disabled = (slideIndex === slides.length);
+            
+            // 滾動到頁面頂部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

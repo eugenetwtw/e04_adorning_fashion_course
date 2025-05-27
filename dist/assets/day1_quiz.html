@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一天測驗：服飾珠寶的起源與早期發展</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .question h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .option {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        label:hover {
+            background-color: #f0f0f0;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .feedback {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .score-display {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>第一天測驗：服飾珠寶的起源與早期發展</h1>
+        
+        <form id="quiz-form">
+            <div class="question" id="q1">
+                <h3>1. 最早的珠寶裝飾可以追溯到約多少年前？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="A"> A. 約5,000年前
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="B"> B. 約25,000年前
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="C"> C. 約75,000-100,000年前
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="D"> D. 約150,000-200,000年前
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q2">
+                <h3>2. 古埃及珠寶的主要特點不包括以下哪一項？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="A"> A. 大量使用青金石與綠松石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="B"> B. 象徵性符號如聖甲蟲與荷魯斯之眼
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="C"> C. 大量使用鑽石與紅寶石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="D"> D. 與宗教信仰和來世觀念密切相關
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q3">
+                <h3>3. 以下哪一項不是古代珠寶的主要功能？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="A"> A. 宗教與儀式象徵
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="B"> B. 社會地位與財富展示
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="C"> C. 護身符與保護作用
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="D"> D. 時尚潮流與季節性變化
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q4">
+                <h3>4. 美索不達米亞珠寶工藝的重要發展包括？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="A"> A. 精細的金屬絲細工（filigree）技術
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="B"> B. 琺瑯工藝的廣泛應用
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="C"> C. 鑽石切割與拋光技術
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="D"> D. 3D列印技術的早期形式
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q5">
+                <h3>5. 古希臘珠寶的主要特點是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="A"> A. 大量使用寶石與珍珠
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="B"> B. 精細的金工技術與自然主題
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="C"> C. 抽象幾何圖案為主
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="D"> D. 以銀為主要材料
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q6">
+                <h3>6. 古羅馬時期珠寶的重要創新是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="A"> A. 首次使用鑽石
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="B"> B. 發明了戒指作為婚姻象徵
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="C"> C. 引入了機械化生產
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="D"> D. 發明了可拆卸式珠寶
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q7">
+                <h3>7. 以下哪一種材料在史前珠寶中最不常見？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="A"> A. 貝殼與動物牙齒
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="B"> B. 骨頭與石頭
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="C"> C. 琥珀與木材
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="D"> D. 白金與鑽石
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q8">
+                <h3>8. 「服飾珠寶」(Costume Jewelry)一詞最初的含義是？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="A"> A. 專為舞台表演設計的珠寶
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="B"> B. 搭配特定服裝的珠寶配件
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="C"> C. 使用非貴重材料製作的仿真珠寶
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="D"> D. 可以變換形態的多功能珠寶
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q9">
+                <h3>9. 早期珠寶製作中的「失蠟法」(Lost-wax casting)是指？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="A"> A. 用蠟塗抹金屬表面以防止氧化
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="B"> B. 先用蠟製作模型，然後用金屬替換的鑄造技術
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="C"> C. 在珠寶表面塗蠟以增加光澤
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="D"> D. 用蠟將寶石固定在金屬框架上
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question" id="q10">
+                <h3>10. 以下哪一個古代文明沒有發展出獨特的珠寶傳統？</h3>
+                <div class="options">
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="A"> A. 古埃及
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="B"> B. 古希臘
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="C"> C. 印度河流域
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="D"> D. 南極洲文明
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" id="submit-btn">提交答案</button>
+        </form>
+        
+        <div class="score-display" id="score-display"></div>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            // 正確答案
+            const correctAnswers = {
+                q1: "C",
+                q2: "C",
+                q3: "D",
+                q4: "A",
+                q5: "B",
+                q6: "B",
+                q7: "D",
+                q8: "B",
+                q9: "B",
+                q10: "D"
+            };
+            
+            let score = 100;
+            let answered = 0;
+            let correct = 0;
+            
+            // 檢查每個問題
+            for (let i = 1; i <= 10; i++) {
+                const questionId = 'q' + i;
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                
+                if (selectedOption) {
+                    answered++;
+                    if (selectedOption.value !== correctAnswers[questionId]) {
+                        score -= 10; // 每答錯一題扣10分
+                    } else {
+                        correct++;
+                    }
+                }
+            }
+            
+            // 顯示分數
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.innerHTML = `<strong>測驗結果</strong><br>
+                                     答對題數: ${correct} / 10<br>
+                                     總分: ${score} 分`;
+            scoreDisplay.style.display = 'block';
+            
+            // 滾動到結果區域
+            scoreDisplay.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

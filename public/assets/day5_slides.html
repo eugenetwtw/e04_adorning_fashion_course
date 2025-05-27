@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五天課程：二戰後至1960年代的服飾珠寶</title>
+    <style>
+        :root {
+            --primary: #8a6d3b;
+            --secondary: #d4af37;
+            --background: #f9f6f0;
+            --text: #333;
+            --accent: #a52a2a;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slide {
+            display: none;
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            min-height: 500px;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: var(--accent);
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-counter {
+            font-size: 1.2em;
+            color: var(--primary);
+            align-self: center;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="slide active" id="slide1">
+        <h1>二戰後至1960年代的服飾珠寶</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400.png?text=二戰後至1960年代服飾珠寶" alt="二戰後至1960年代服飾珠寶">
+            <p class="caption">《Adorning Fashion: The History of Costume Jewellery to Modern Times》課程</p>
+        </div>
+        <h2>第五天課程</h2>
+        <p>講師：[講師姓名]</p>
+        <p>日期：[日期]</p>
+    </div>
+
+    <!-- 課程概述 -->
+    <div class="slide" id="slide2">
+        <h1>課程概述</h1>
+        <h2>今日學習目標</h2>
+        <ul>
+            <li>理解二戰對珠寶設計與生產的影響</li>
+            <li>分析戰後復興期的珠寶風格與社會背景</li>
+            <li>探討1950年代的珠寶設計特點與代表人物</li>
+            <li>辨識不同地區的珠寶設計風格差異</li>
+            <li>掌握這一時期珠寶材料與工藝的創新</li>
+        </ul>
+        <h2>課程安排</h2>
+        <ol>
+            <li>上午：二戰影響與戰後復興（1940-1950年）</li>
+            <li>下午：1950年代的珠寶設計與創新（1950-1960年）</li>
+        </ol>
+    </div>
+
+    <!-- 二戰對珠寶業的影響 -->
+    <div class="slide" id="slide3">
+        <h1>二戰對珠寶業的影響</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>物質與生產限制</h3>
+                <ul>
+                    <li>貴金屬徵用與配給制度</li>
+                    <li>寶石供應鏈中斷</li>
+                    <li>工匠徵召入伍</li>
+                    <li>工廠轉為軍需生產</li>
+                </ul>
+                <h3>設計與風格變化</h3>
+                <ul>
+                    <li>體積增大但重量減輕</li>
+                    <li>愛國主題與軍事象徵</li>
+                    <li>實用性與耐用性的強調</li>
+                    <li>簡化設計與生產工藝</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=二戰時期珠寶" alt="二戰時期珠寶">
+                    <p class="caption">二戰時期的替代材料珠寶</p>
+                </div>
+                <h3>替代材料的使用</h3>
+                <ul>
+                    <li>基本金屬：銅、黃銅、鋅</li>
+                    <li>木材、皮革、紡織品</li>
+                    <li>塑料與合成材料</li>
+                    <li>玻璃與陶瓷</li>
+                    <li>回收材料的創新應用</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">二戰期間的物質限制促使設計師尋找創新解決方案，為戰後珠寶設計奠定了新的思維基礎。</p>
+    </div>
+
+    <!-- 各國戰時珠寶差異 -->
+    <div class="slide" id="slide4">
+        <h1>各國戰時珠寶差異</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>美國</h3>
+                <ul>
+                    <li>「勝利珠寶」（Victory Jewelry）</li>
+                    <li>愛國主題與軍事象徵</li>
+                    <li>合成材料的大規模應用</li>
+                    <li>好萊塢風格的延續</li>
+                </ul>
+                <h3>英國</h3>
+                <ul>
+                    <li>嚴格的金屬使用限制</li>
+                    <li>「實用珠寶」（Utility Jewelry）</li>
+                    <li>傳統工藝的保存努力</li>
+                    <li>皇室珠寶的象徵意義</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>法國與歐洲大陸</h3>
+                <ul>
+                    <li>巴黎珠寶業的中斷</li>
+                    <li>地下工作室的秘密生產</li>
+                    <li>瑞士作為中立國的珠寶生產</li>
+                    <li>戰後重建的準備</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=各國戰時珠寶" alt="各國戰時珠寶">
+                    <p class="caption">不同國家的戰時珠寶風格</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 戰後復興期珠寶 -->
+    <div class="slide" id="slide5">
+        <h1>戰後復興期珠寶（1945-1950年）</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>社會背景與心理需求</h3>
+                <ul>
+                    <li>戰後重建與經濟復甦</li>
+                    <li>對奢華與美好生活的渴望</li>
+                    <li>傳統性別角色的回歸</li>
+                    <li>消費文化的興起</li>
+                </ul>
+                <h3>設計風格特點</h3>
+                <ul>
+                    <li>體積大但結構輕盈</li>
+                    <li>豐富色彩與對比效果</li>
+                    <li>自然主題的回歸</li>
+                    <li>裝飾藝術風格的延續與轉變</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=戰後復興期珠寶" alt="戰後復興期珠寶">
+                    <p class="caption">戰後復興期的色彩豐富珠寶</p>
+                </div>
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>黃金的回歸與普及</li>
+                    <li>合成寶石的持續使用</li>
+                    <li>半寶石的創新應用</li>
+                    <li>機械化生產的發展</li>
+                    <li>新型合金與表面處理</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 克里斯汀·迪奧與新風貌 -->
+    <div class="slide" id="slide6">
+        <h1>克里斯汀·迪奧與新風貌</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>迪奧的「新風貌」（New Look）</h3>
+                <ul>
+                    <li>1947年推出的革命性時裝</li>
+                    <li>強調女性曲線與優雅</li>
+                    <li>對戰時簡樸風格的反動</li>
+                    <li>奢華材料的大量使用</li>
+                </ul>
+                <h3>珠寶與時裝的協調</h3>
+                <ul>
+                    <li>配套珠寶的概念強化</li>
+                    <li>服裝與珠寶的整體設計</li>
+                    <li>珠寶作為時裝不可分割的部分</li>
+                    <li>時裝屋開始涉足珠寶設計</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=迪奧新風貌與珠寶" alt="迪奧新風貌與珠寶">
+                    <p class="caption">迪奧新風貌時裝與配套珠寶</p>
+                </div>
+                <h3>迪奧珠寶特點</h3>
+                <ul>
+                    <li>誇張的比例與體積</li>
+                    <li>多層次的設計結構</li>
+                    <li>閃亮的水鑽與人造寶石</li>
+                    <li>花卉與蝴蝶結主題</li>
+                    <li>精緻的金屬工藝</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">迪奧的「新風貌」不僅革新了時裝，也重新定義了戰後珠寶與時裝的關係。</p>
+    </div>
+
+    <!-- 1950年代珠寶設計特點 -->
+    <div class="slide" id="slide7">
+        <h1>1950年代珠寶設計特點</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>設計風格</h3>
+                <ul>
+                    <li>豐富多彩的色彩組合</li>
+                    <li>立體感與動態效果</li>
+                    <li>自然主題的寫實表現</li>
+                    <li>對稱與平衡的構圖</li>
+                    <li>多功能與可轉換設計</li>
+                </ul>
+                <h3>常見主題</h3>
+                <ul>
+                    <li>花卉與植物：玫瑰、蘭花</li>
+                    <li>動物：鳥類、蝴蝶、大貓</li>
+                    <li>蝴蝶結與緞帶</li>
+                    <li>抽象幾何形態</li>
+                    <li>星星與宇宙元素</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=1950年代珠寶特點" alt="1950年代珠寶特點">
+                    <p class="caption">1950年代的立體花卉胸針</p>
+                </div>
+                <h3>材料與工藝</h3>
+                <ul>
+                    <li>黃金與白金的並用</li>
+                    <li>彩色寶石的大量使用</li>
+                    <li>鑽石的新型切割方式</li>
+                    <li>質感對比：亮面與霧面</li>
+                    <li>編織與鏈條技術的創新</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1950年代珠寶類型 -->
+    <div class="slide" id="slide8">
+        <h1>1950年代珠寶類型</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>女性珠寶</h3>
+                <ul>
+                    <li><strong>胸針</strong>：最具代表性的1950年代珠寶</li>
+                    <li><strong>項鍊</strong>：貼頸式與多層次設計</li>
+                    <li><strong>耳環</strong>：耳夾式設計的流行</li>
+                    <li><strong>手鐲與手鏈</strong>：寬版與多層次</li>
+                    <li><strong>戒指</strong>：雞尾酒戒指的流行</li>
+                </ul>
+                <h3>男性珠寶</h3>
+                <ul>
+                    <li><strong>袖扣</strong>：幾何形狀與抽象設計</li>
+                    <li><strong>領帶別針</strong>：簡潔但有特色</li>
+                    <li><strong>腕錶</strong>：更加精緻的設計</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=1950年代珠寶類型" alt="1950年代珠寶類型">
+                    <p class="caption">各類1950年代風格珠寶</p>
+                </div>
+                <h3>流行配飾</h3>
+                <ul>
+                    <li><strong>胸針組合</strong>：多個胸針組合佩戴</li>
+                    <li><strong>珠寶套裝</strong>：配套的項鍊、耳環、胸針</li>
+                    <li><strong>珍珠系列</strong>：多層次珍珠項鍊</li>
+                    <li><strong>墨鏡鏈</strong>：裝飾性眼鏡鏈</li>
+                    <li><strong>手包裝飾</strong>：珠寶質感的包扣</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 高級珠寶品牌的復興 -->
+    <div class="slide" id="slide9">
+        <h1>高級珠寶品牌的復興</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>卡地亞（Cartier）</h3>
+                <ul>
+                    <li>戰後的品牌重建</li>
+                    <li>「萬獸之王」系列的發展</li>
+                    <li>彩色寶石與鑽石的組合</li>
+                    <li>三色金的創新應用</li>
+                </ul>
+                <h3>梵克雅寶（Van Cleef & Arpels）</h3>
+                <ul>
+                    <li>「芭蕾舞伶」系列</li>
+                    <li>「拉鍊」項鍊的創新</li>
+                    <li>無邊鑲嵌技術的完善</li>
+                    <li>童話與神話主題</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>寶格麗（Bulgari）</h3>
+                <ul>
+                    <li>義大利風格的復興</li>
+                    <li>古羅馬硬幣的運用</li>
+                    <li>蛇形珠寶的標誌性設計</li>
+                </ul>
+                <h3>蒂芙尼（Tiffany & Co.）</h3>
+                <ul>
+                    <li>讓·施盧姆伯傑的設計革新</li>
+                    <li>自然主題的美國詮釋</li>
+                    <li>「蒂芙尼藍」的品牌標識</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=高級珠寶品牌作品" alt="高級珠寶品牌作品">
+                    <p class="caption">戰後高級珠寶品牌的代表作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重要珠寶設計師 -->
+    <div class="slide" id="slide10">
+        <h1>重要珠寶設計師</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>讓·施盧姆伯傑（Jean Schlumberger）</h3>
+                <ul>
+                    <li>1956年加入蒂芙尼</li>
+                    <li>奇幻海洋生物主題</li>
+                    <li>彩色琺瑯與寶石組合</li>
+                    <li>為賈桂琳·肯尼迪設計珠寶</li>
+                </ul>
+                <h3>大衛·韋伯（David Webb）</h3>
+                <ul>
+                    <li>美國珠寶設計的代表</li>
+                    <li>大膽的動物主題</li>
+                    <li>琺瑯與黃金的鮮明對比</li>
+                    <li>好萊塢明星的寵愛</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>富爾維奧·斯卡維亞（Fulco di Verdura）</h3>
+                <ul>
+                    <li>從香奈兒到個人品牌</li>
+                    <li>貝殼與海洋主題</li>
+                    <li>彩色寶石的創新組合</li>
+                    <li>「馬蹄」胸針的標誌性設計</li>
+                </ul>
+                <h3>安德魯·格林納（Andrew Grima）</h3>
+                <ul>
+                    <li>英國現代珠寶設計先驅</li>
+                    <li>自然紋理的抽象表現</li>
+                    <li>粗獷表面與精細結構的對比</li>
+                    <li>英國皇室的青睞</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶設計師作品" alt="珠寶設計師作品">
+                    <p class="caption">各設計師的代表作品</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 時尚品牌與服飾珠寶 -->
+    <div class="slide" id="slide11">
+        <h1>時尚品牌與服飾珠寶</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>香奈兒（Chanel）</h3>
+                <ul>
+                    <li>可可·香奈兒的復出（1954年）</li>
+                    <li>「仿真珠寶」概念的革新</li>
+                    <li>多層次珍珠與金鏈的組合</li>
+                    <li>標誌性的山茶花與星星設計</li>
+                </ul>
+                <h3>迪奧（Dior）</h3>
+                <ul>
+                    <li>與德國格羅斯（Grosse）合作</li>
+                    <li>與時裝完美協調的配飾</li>
+                    <li>水鑽與彩色玻璃的奢華運用</li>
+                    <li>幸運符號與花卉主題</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>埃爾莎·夏帕瑞麗（Elsa Schiaparelli）</h3>
+                <ul>
+                    <li>超現實主義元素的延續</li>
+                    <li>與藝術家的跨界合作</li>
+                    <li>震撼視覺效果的追求</li>
+                    <li>昆蟲與宇宙主題</li>
+                </ul>
+                <h3>其他時尚品牌</h3>
+                <ul>
+                    <li>巴黎世家（Balenciaga）的極簡風格</li>
+                    <li>吉文西（Givenchy）的優雅設計</li>
+                    <li>普奇（Pucci）的色彩實驗</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=時尚品牌珠寶" alt="時尚品牌珠寶">
+                    <p class="caption">各時尚品牌的服飾珠寶設計</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 大眾市場珠寶 -->
+    <div class="slide" id="slide12">
+        <h1>大眾市場珠寶</h1>
+        <h2>服飾珠寶的民主化</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>美國市場</h3>
+                <ul>
+                    <li>科斯特（Coro）的平價精品</li>
+                    <li>特里法里（Trifari）的皇冠系列</li>
+                    <li>艾森伯格（Eisenberg）的水鑽設計</li>
+                    <li>莫奈（Monet）的金屬工藝</li>
+                </ul>
+                <h3>歐洲市場</h3>
+                <ul>
+                    <li>德國格羅斯（Grosse）的精工製作</li>
+                    <li>奧地利斯華洛世奇（Swarovski）的水晶</li>
+                    <li>英國薩拉·科文垂（Sarah Coventry）的直銷模式</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>生產與銷售創新</h3>
+                <ul>
+                    <li>機械化生產的精進</li>
+                    <li>電視購物的興起</li>
+                    <li>百貨公司珠寶部門的擴大</li>
+                    <li>時尚雜誌廣告的影響</li>
+                    <li>「自購」珠寶概念的出現</li>
+                </ul>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=大眾市場珠寶" alt="大眾市場珠寶">
+                    <p class="caption">1950年代的平價精品珠寶</p>
+                </div>
+            </div>
+        </div>
+        <p class="highlight">1950年代見證了服飾珠寶的民主化，高品質設計不再是富人的專利，中產階級也能擁有時尚珠寶。</p>
+    </div>
+
+    <!-- 材料與工藝創新 -->
+    <div class="slide" id="slide13">
+        <h1>材料與工藝創新</h1>
+        <div class="two-column">
+            <div class="column">
+                <h3>新材料的應用</h3>
+                <ul>
+                    <li>人造珍珠的品質提升</li>
+                    <li>亞克力與新型塑料</li>
+                    <li>斯華洛世奇水晶的普及</li>
+                    <li>合成寶石的進步</li>
+                    <li>新型合金的開發</li>
+                </ul>
+                <h3>表面處理技術</h3>
+                <ul>
+                    <li>電鍍工藝的精進</li>
+                    <li>氧化與仿古處理</li>
+                    <li>噴砂與拋光對比</li>
+                    <li>琺瑯技術的創新</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=材料與工藝創新" alt="材料與工藝創新">
+                    <p class="caption">新材料與創新工藝的應用</p>
+                </div>
+                <h3>結構與機械創新</h3>
+                <ul>
+                    <li>可轉換珠寶的機關設計</li>
+                    <li>輕量化內部結構</li>
+                    <li>新型扣具與安全鎖</li>
+                    <li>可調節尺寸的設計</li>
+                    <li>模塊化組件的應用</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 珠寶與流行文化 -->
+    <div class="slide" id="slide14">
+        <h1>珠寶與流行文化</h1>
+        <h2>明星、電影與社會影響</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>好萊塢影響</h3>
+                <ul>
+                    <li>奧黛麗·赫本的優雅珠寶風格</li>
+                    <li>瑪麗蓮·夢露的鑽石宣言</li>
+                    <li>葛麗絲·凱莉的王妃珠寶</li>
+                    <li>伊麗莎白·泰勒的珠寶熱愛</li>
+                </ul>
+                <h3>電影中的珠寶</h3>
+                <ul>
+                    <li>《蒂凡尼的早餐》（1961年）</li>
+                    <li>《後窗》（1954年）</li>
+                    <li>《捉賊記》（1955年）</li>
+                    <li>《紳士愛美人》（1953年）</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=珠寶與流行文化" alt="珠寶與流行文化">
+                    <p class="caption">好萊塢明星與標誌性珠寶</p>
+                </div>
+                <h3>社會影響</h3>
+                <ul>
+                    <li>珠寶作為社會地位的象徵</li>
+                    <li>婚戒文化的強化</li>
+                    <li>珠寶廣告的心理訴求</li>
+                    <li>珠寶與女性形象的關係</li>
+                    <li>男性珠寶的社會接受度</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">1950年代的流行文化，特別是好萊塢電影，極大地影響了珠寶的設計風格與社會意義。</p>
+    </div>
+
+    <!-- 走向1960年代 -->
+    <div class="slide" id="slide15">
+        <h1>走向1960年代</h1>
+        <h2>變革的前兆</h2>
+        <div class="two-column">
+            <div class="column">
+                <h3>設計趨勢變化</h3>
+                <ul>
+                    <li>從結構嚴謹到自由形態</li>
+                    <li>從裝飾性到實驗性</li>
+                    <li>從傳統材料到創新組合</li>
+                    <li>從精緻工藝到概念表達</li>
+                </ul>
+                <h3>社會文化轉變</h3>
+                <ul>
+                    <li>青年文化的興起</li>
+                    <li>太空時代的影響</li>
+                    <li>女性角色的再定義</li>
+                    <li>消費主義的批判</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x300.png?text=1960年代前兆" alt="1960年代前兆">
+                    <p class="caption">1950年代末期的前衛設計</p>
+                </div>
+                <h3>新興設計師</h3>
+                <ul>
+                    <li>皮耶爾·斯特林（Pierre Sterlé）的動態設計</li>
+                    <li>喬治·布拉克（Georges Braque）的藝術珠寶</li>
+                    <li>瑪格麗特·德·皮特（Margaret De Patta）的現代主義</li>
+                    <li>亞歷山大·考爾德（Alexander Calder）的可佩戴雕塑</li>
+                </ul>
+            </div>
+        </div>
+        <p class="highlight">1950年代末期已經顯現出珠寶設計即將迎來的巨大變革，為1960年代的實驗與反叛奠定了基礎。</p>
+    </div>
+
+    <!-- 總結 -->
+    <div class="slide" id="slide16">
+        <h1>今日課程總結</h1>
+        <h2>關鍵要點</h2>
+        <ol>
+            <li>二戰對珠寶業造成了物質限制，但也促使設計師尋找創新解決方案</li>
+            <li>戰後復興期的珠寶反映了人們對奢華與美好生活的渴望</li>
+            <li>克里斯汀·迪奧的「新風貌」重新定義了珠寶與時裝的關係</li>
+            <li>1950年代珠寶以豐富色彩、立體感和自然主題為特點</li>
+            <li>高級珠寶品牌在戰後迅速復興，並發展出標誌性設計</li>
+            <li>時尚品牌開始涉足珠寶設計，模糊了高級珠寶與服飾珠寶的界限</li>
+            <li>大眾市場珠寶的發展實現了服飾珠寶的民主化</li>
+            <li>1950年代末期已顯現出珠寶設計即將迎來的巨大變革</li>
+        </ol>
+        <h2>預告明日課程</h2>
+        <p>1960-1970年代的實驗與反叛</p>
+    </div>
+
+    <!-- 參考資料 -->
+    <div class="slide" id="slide17">
+        <h1>參考資料</h1>
+        <ul>
+            <li>Cera, Deanna Farneti. <em>Adorning Fashion: The History of Costume Jewellery to Modern Times</em>. ACC Art Books, 2019.</li>
+            <li>Muller, Florence. <em>Jewelry of the 20th Century</em>. Rizzoli, 2001.</li>
+            <li>Proddow, Penny and Debra Healy. <em>American Jewelry: Glamour and Tradition</em>. Rizzoli, 1987.</li>
+            <li>Traina, John. <em>Extraordinary Jewels</em>. Doubleday, 1994.</li>
+            <li>Nadelhoffer, Hans. <em>Cartier: Jewelers Extraordinary</em>. Harry N. Abrams, 2007.</li>
+            <li>Culme, John and Nicholas Rayner. <em>The Jewels of the Duchess of Windsor</em>. Vendome Press, 1987.</li>
+        </ul>
+        <h2>圖片來源</h2>
+        <p>所有圖片版權歸原作者所有，僅用於教育目的。</p>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>上一頁</button>
+        <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">17</span></div>
+        <button id="nextBtn" onclick="changeSlide(1)">下一頁</button>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > slides.length) {
+                slideIndex = slides.length;
+            }
+            if (n < 1) {
+                slideIndex = 1;
+            }
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            slides[slideIndex-1].classList.add('active');
+            document.getElementById('currentSlide').textContent = slideIndex;
+            
+            document.getElementById('prevBtn').disabled = (slideIndex === 1);
+            document.getElementById('nextBtn').disabled = (slideIndex === slides.length);
+            
+            // 滾動到頁面頂部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
